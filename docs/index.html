@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RAG-LAB | Módulo 1</title>
+    <meta
+      name="description"
+      content="Módulo 1 del curso RAG-LAB: GitHub, fork, Miniconda, PyCharm y Python básico."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <button
+      class="mobile-nav-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="course-nav"
+    >
+      Índice del módulo
+    </button>
+
+    <div class="page-shell">
+      <aside class="sidebar">
+        <p class="eyebrow">RAG-LAB</p>
+        <h1>Módulo 1</h1>
+        <p class="sidebar-copy">
+          Nivelación técnica para estudiantes sin experiencia previa en programación.
+        </p>
+        <nav class="side-nav" id="course-nav">
+          <a href="#vision">Visión general</a>
+          <a href="#resultados">Resultados</a>
+          <a href="#agenda">Agenda de 8 horas</a>
+          <a href="#github">GitHub y Git</a>
+          <a href="#fork">Fork del repositorio</a>
+          <a href="#miniconda">Miniconda</a>
+          <a href="#pycharm">PyCharm y GitHub</a>
+          <a href="#python">Python básico</a>
+          <a href="#practica">Práctica guiada</a>
+          <a href="#errores">Errores comunes</a>
+          <a href="#checklist">Checklist final</a>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <section class="hero" id="vision">
+          <p class="hero-tag">Diseño de agentes de I.A. RAG-LAB</p>
+          <h2>La base técnica antes de entrar a RAG, embeddings y agentes.</h2>
+          <p class="hero-copy">
+            Este módulo cubre dos sesiones de 4 horas. El objetivo no es construir un chatbot en
+            la primera clase, sino lograr que todo el grupo tenga las herramientas instaladas, su
+            fork listo, su proyecto en local y un entorno funcional para empezar a programar.
+          </p>
+          <div class="hero-cards">
+            <article>
+              <span>Duración</span>
+              <strong>2 sesiones x 4 horas</strong>
+            </article>
+            <article>
+              <span>Gestión del entorno</span>
+              <strong>Miniconda</strong>
+            </article>
+            <article>
+              <span>Resultado</span>
+              <strong>Fork + PyCharm + entorno RAGLAB</strong>
+            </article>
+          </div>
+        </section>
+
+        <section id="resultados" class="panel">
+          <p class="section-kicker">Resultados del módulo</p>
+          <h3>Qué debe saber hacer cada estudiante al finalizar</h3>
+          <ul class="check-list">
+            <li>Crear y configurar correctamente una cuenta de GitHub.</li>
+            <li>Instalar Git, Miniconda y PyCharm.</li>
+            <li>Hacer un fork del repositorio del curso.</li>
+            <li>Descargar el fork personal al computador desde PyCharm.</li>
+            <li>Crear el entorno `RAGLAB` a partir del archivo `RAGLAB.yml`.</li>
+            <li>Usar el intérprete correcto del proyecto en PyCharm.</li>
+            <li>Ejecutar y modificar scripts básicos en Python.</li>
+            <li>Guardar cambios con Git y subirlos a GitHub.</li>
+          </ul>
+        </section>
+
+        <section class="panel">
+          <p class="section-kicker">Herramientas base</p>
+          <h3>Qué papel cumple cada herramienta en el curso</h3>
+          <div class="resource-grid">
+            <article>
+              <h4>Python</h4>
+              <p>
+                Es el lenguaje de programación base con el que construiremos ejercicios, scripts y
+                proyectos durante el curso.
+              </p>
+            </article>
+            <article>
+              <h4>Miniconda</h4>
+              <p>
+                Nos permite gestionar versiones de Python, la instalación de paquetes y la
+                configuración técnica del proyecto de forma más estable.
+              </p>
+            </article>
+            <article>
+              <h4>Git y GitHub</h4>
+              <p>
+                Se usan para control de versiones, respaldo del trabajo y seguimiento ordenado de
+                los avances de cada estudiante.
+              </p>
+            </article>
+            <article>
+              <h4>PyCharm</h4>
+              <p>
+                Será el entorno de desarrollo principal para abrir el proyecto, descargar el fork,
+                ejecutar scripts y trabajar con GitHub.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="agenda" class="panel">
+          <p class="section-kicker">Plan sugerido</p>
+          <h3>Agenda detallada para 8 horas</h3>
+          <p>
+            Esta agenda muestra de forma general qué se trabajará en las dos sesiones del módulo.
+          </p>
+          <div class="timeline">
+            <article>
+              <span class="timeline-label">Sesión 1</span>
+              <h4>Preparación del entorno de trabajo</h4>
+              <ul>
+                <li>Presentación general de las herramientas del curso.</li>
+                <li>Creación de cuenta de GitHub.</li>
+                <li>Instalación de Git y configuración inicial.</li>
+                <li>Creación del fork en GitHub.</li>
+                <li>Instalación de Miniconda.</li>
+                <li>Revisión de terminales y primeras verificaciones.</li>
+              </ul>
+            </article>
+            <article>
+              <span class="timeline-label">Sesión 2</span>
+              <h4>Trabajo local y bases de Python</h4>
+              <ul>
+                <li>Instalación de PyCharm.</li>
+                <li>Conexión de PyCharm con GitHub usando token.</li>
+                <li>Descarga del fork personal al computador.</li>
+                <li>Creación del entorno con `conda env create`.</li>
+                <li>Selección del intérprete en PyCharm.</li>
+                <li>Variables, tipos, condicionales, ciclos y funciones.</li>
+                <li>Ejecución de ejercicios y práctica integradora.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section id="github" class="panel">
+          <p class="section-kicker">Paso 1</p>
+          <h3>Cuenta de GitHub e instalación de Git</h3>
+          <p>
+            En este curso usaremos <strong>Git</strong> para guardar el historial de cambios del
+            proyecto en el computador y <strong>GitHub</strong> para almacenar una copia en línea
+            del repositorio. Esto permite que cada estudiante tenga respaldo, control de versiones
+            y un espacio claro donde entregar sus avances.
+          </p>
+          <div class="resource-grid">
+            <article>
+              <h4>Git</h4>
+              <p>
+                Registra los cambios del proyecto y permite crear versiones del trabajo a medida
+                que avanza el curso.
+              </p>
+            </article>
+            <article>
+              <h4>GitHub</h4>
+              <p>
+                Guarda el repositorio en línea, aloja el fork personal y permite sincronizar los
+                cambios del estudiante.
+              </p>
+            </article>
+          </div>
+          <ol class="steps">
+            <li>Crea tu cuenta en <a href="https://github.com" target="_blank" rel="noreferrer">github.com</a>.</li>
+            <li>Confirma tu correo y completa tu perfil básico.</li>
+            <li>Instala Git desde <a href="https://git-scm.com/downloads" target="_blank" rel="noreferrer">git-scm.com/downloads</a>.</li>
+            <li>Abre una terminal y configura tu nombre y correo.</li>
+          </ol>
+          <div class="note-box">
+            <strong>Dónde se hace esto:</strong> la cuenta se crea en el navegador. Los comandos se
+            ejecutan en una terminal del computador del estudiante. En Windows puede ser
+            <strong>PowerShell</strong> o <strong>Git Bash</strong>. En macOS o Linux se usa
+            <strong>Terminal</strong>.
+          </div>
+          <div class="command-block">
+            <div class="command-head">
+              <h4>Configuración inicial de Git</h4>
+              <button class="copy-button" data-copy>Copiar</button>
+            </div>
+            <pre><code>git config --global user.name "Tu Nombre"
+git config --global user.email "tu-correo@ejemplo.com"
+git config --global init.defaultBranch main
+git config --list</code></pre>
+          </div>
+        </section>
+
+        <section id="fork" class="panel">
+          <p class="section-kicker">Paso 2</p>
+          <h3>Fork del repositorio del curso</h3>
+          <p>
+            Un <strong>fork</strong> es una copia del repositorio original dentro de la cuenta de
+            GitHub del estudiante. Sirve para que cada persona trabaje sobre su propia versión del
+            proyecto sin afectar directamente el repositorio del curso.
+          </p>
+          <p>
+            Repositorio original del curso:
+            <a
+              href="https://github.com/cristian-pulido/RAGLAB"
+              target="_blank"
+              rel="noreferrer"
+            >
+              github.com/cristian-pulido/RAGLAB
+            </a>
+          </p>
+          <ol class="steps">
+            <li>Entrar al repositorio original del curso en GitHub.</li>
+            <li>Hacer clic en <strong>Fork</strong>.</li>
+            <li>Verificar que apareció una copia en la cuenta personal.</li>
+            <li>Confirmar que el nombre del repositorio en la cuenta del estudiante es `RAGLAB`.</li>
+          </ol>
+          <figure class="image-card">
+            <img
+              src="./images/fork_view.png"
+              alt="Vista de GitHub mostrando el botón Fork en el repositorio RAGLAB."
+            />
+            <figcaption>Ubicación del botón <strong>Fork</strong> en GitHub.</figcaption>
+          </figure>
+          <figure class="image-card">
+            <img
+              src="./images/fork_steps.png"
+              alt="Pantalla de GitHub para crear un fork, mostrando el nombre del repositorio, la opción de copiar solo la rama main y el botón Create fork."
+            />
+            <figcaption>
+              Al crear el fork, mantén el nombre <strong>RAGLAB</strong> y asegúrate de
+              <strong>no marcar</strong> la opción <strong>Copy the main branch only</strong>. La
+              idea es copiar el repositorio completo, no solo la rama `main`.
+            </figcaption>
+          </figure>
+          <div class="note-box">
+            <strong>Dónde se hace esto:</strong> este paso ocurre completamente en el navegador. La
+            copia local del proyecto no se hace aquí; se hará en el paso de PyCharm.
+          </div>
+        </section>
+
+        <section id="miniconda" class="panel">
+          <p class="section-kicker">Paso 3</p>
+          <h3>Instalación de Miniconda</h3>
+          <p>
+            Python es el lenguaje de programación base del curso. <strong>Miniconda</strong> nos
+            ayuda a gestionar la instalación de Python y las dependencias del proyecto de una forma
+            más ordenada y estable.
+          </p>
+          <p>
+            Para este curso tiene sentido usar Miniconda porque facilita la configuración del grupo,
+            reduce problemas de dependencias y hace más estable el trabajo con librerías pesadas.
+          </p>
+          <div class="resource-grid">
+            <article>
+              <h4>Descarga oficial</h4>
+              <a
+                href="https://www.anaconda.com/docs/getting-started/miniconda/install"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Instalador de Miniconda
+              </a>
+              <p class="hint">
+                Cada estudiante debe descargar la versión de su sistema operativo e instalarla.
+              </p>
+            </article>
+            <article>
+              <h4>Qué buscamos aquí</h4>
+              <p>
+                En este paso solo queremos dejar Miniconda instalado y funcionando correctamente en
+                el computador del estudiante.
+              </p>
+            </article>
+          </div>
+
+          <div class="os-switcher" data-tabs>
+            <div class="tab-buttons">
+              <button class="active" data-tab-target="conda-windows">Windows</button>
+              <button data-tab-target="conda-maclinux">macOS / Linux</button>
+            </div>
+            <div class="tab-panels">
+              <div class="tab-panel active" data-tab-panel="conda-windows">
+                <p>
+                  <strong>Dónde se hace esto:</strong> abre <strong>Anaconda Prompt</strong> o una
+                  terminal donde `conda` ya funcione correctamente.
+                </p>
+                <pre><code>conda --version
+python --version</code></pre>
+                <figure class="image-card">
+                  <img
+                    src="./images/conda.png"
+                    alt="Consola mostrando Miniconda funcionando y el indicador base en el prompt."
+                  />
+                  <figcaption>
+                    Si ves <strong>(base)</strong> al inicio de la terminal, significa que estás en
+                    el ambiente base que instala Conda por defecto. En este paso eso es normal.
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="tab-panel" data-tab-panel="conda-maclinux">
+                <p>
+                  <strong>Dónde se hace esto:</strong> abre la aplicación
+                  <strong>Terminal</strong> del sistema.
+                </p>
+                <pre><code>conda --version
+python --version</code></pre>
+                <figure class="image-card">
+                  <img
+                    src="./images/conda.png"
+                    alt="Consola mostrando Miniconda funcionando y el indicador base en el prompt."
+                  />
+                  <figcaption>
+                    Si ves <strong>(base)</strong> al inicio de la terminal, significa que Conda
+                    activó su ambiente base. Eso solo indica que Miniconda está funcionando.
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+
+          <div class="command-block">
+            <div class="command-head">
+              <h4>Aceptar términos de Conda antes de crear el entorno</h4>
+              <button class="copy-button" data-copy>Copiar</button>
+            </div>
+            <pre><code>conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/main
+conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r
+conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/msys2</code></pre>
+          </div>
+
+          <div class="note-box">
+            <strong>Cuándo ejecutar esto:</strong> hazlo una sola vez después de instalar
+            Miniconda y antes de crear el entorno `RAGLAB` con el archivo `RAGLAB.yml`.
+          </div>
+        </section>
+
+        <section id="pycharm" class="panel">
+          <p class="section-kicker">Paso 4</p>
+          <h3>PyCharm, conexión con GitHub y copia local del proyecto</h3>
+          <div class="resource-grid">
+            <article>
+              <h4>Descarga</h4>
+              <a
+                href="https://www.jetbrains.com/pycharm/download/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                PyCharm Community
+              </a>
+            </article>
+            <article>
+              <h4>Objetivo</h4>
+              <p>
+                Conectar PyCharm con GitHub, descargar el fork personal al computador y crear el
+                entorno `RAGLAB` usando el archivo `.yml` del proyecto.
+              </p>
+            </article>
+          </div>
+
+          <div class="note-box">
+            <strong>Objetivo de esta parte:</strong> usar PyCharm para conectarse con GitHub,
+            traer el fork personal al computador y dejar el proyecto listo para ejecutarse.
+          </div>
+
+          <div class="timeline">
+            <article>
+              <span class="timeline-label">Subpaso 1</span>
+              <h4>Generar token en GitHub</h4>
+              <ul>
+                <li>Entrar a la cuenta personal de GitHub.</li>
+                <li>Ir a `Settings`.</li>
+                <li>Luego entrar a `Developer settings`.</li>
+                <li>Crear un token personal y copiarlo.</li>
+              </ul>
+            </article>
+            <article>
+              <span class="timeline-label">Subpaso 2</span>
+              <h4>Conectar PyCharm con GitHub</h4>
+              <ul>
+                <li>Abrir PyCharm.</li>
+                <li>Ir a `File > Settings > Version Control > GitHub`.</li>
+                <li>Hacer clic en `+` y luego `Log in via Token`.</li>
+                <li>Pegar el token y confirmar.</li>
+              </ul>
+            </article>
+            <article>
+              <span class="timeline-label">Subpaso 3</span>
+              <h4>Descargar el fork al computador</h4>
+              <ul>
+                <li>Desde PyCharm, elegir la opción para obtener el proyecto desde GitHub.</li>
+                <li>Seleccionar el fork personal del estudiante.</li>
+                <li>Elegir la carpeta local donde quedará el proyecto.</li>
+                <li>Abrir el repositorio descargado.</li>
+              </ul>
+            </article>
+            <article>
+              <span class="timeline-label">Subpaso 4</span>
+              <h4>Crear y seleccionar el entorno del proyecto</h4>
+              <ul>
+                <li>Abrir una terminal dentro de la carpeta local del proyecto.</li>
+                <li>Crear el entorno con el archivo `RAGLAB.yml`.</li>
+                <li>Activar el entorno `RAGLAB`.</li>
+                <li>Seleccionar ese intérprete en PyCharm.</li>
+              </ul>
+            </article>
+          </div>
+
+          <figure class="image-card">
+            <img
+              src="./images/settings_github.png"
+              alt="Pantalla de GitHub mostrando el acceso a Settings."
+            />
+            <figcaption>
+              Primero entra a <strong>Settings</strong> dentro de tu cuenta de GitHub.
+            </figcaption>
+          </figure>
+
+          <figure class="image-card">
+            <img
+              src="./images/developer_settings.png"
+              alt="Pantalla de GitHub mostrando la sección Developer settings."
+            />
+            <figcaption>
+              Después entra a <strong>Developer settings</strong> para crear el token personal.
+            </figcaption>
+          </figure>
+
+          <figure class="image-card">
+            <img
+              src="./images/token.png"
+              alt="Pantalla de GitHub mostrando la creación de un token personal."
+            />
+            <figcaption>
+              Crea el token, cópialo y guárdalo temporalmente para usarlo en PyCharm.
+            </figcaption>
+          </figure>
+
+          <figure class="image-card">
+            <img
+              src="./images/clone_view.png"
+              alt="Vista de GitHub mostrando dónde identificar la URL del repositorio personal."
+            />
+            <figcaption>
+              Al traer el proyecto a local, verifica que el repositorio seleccionado sea el
+              <strong>fork personal</strong> del estudiante y no el repositorio original del curso.
+            </figcaption>
+          </figure>
+
+          <div class="command-block">
+            <div class="command-head">
+              <h4>Comandos para crear el entorno del proyecto</h4>
+              <button class="copy-button" data-copy>Copiar</button>
+            </div>
+            <pre><code>conda env create -f RAGLAB.yml
+conda activate RAGLAB
+python --version
+pip list</code></pre>
+          </div>
+
+          <figure class="image-card">
+            <img
+              src="./images/select_env.png"
+              alt="Pantalla de PyCharm mostrando cómo seleccionar el ambiente o intérprete para ejecutar programas."
+            />
+            <figcaption>
+              Antes de ejecutar programas en PyCharm, verifica que el intérprete seleccionado sea
+              el ambiente <strong>RAGLAB</strong>.
+            </figcaption>
+          </figure>
+        </section>
+
+        <section id="python" class="panel">
+          <p class="section-kicker">Paso 5</p>
+          <h3>Python básico que sí necesitan para continuar el curso</h3>
+          <div class="concept-grid">
+            <article>
+              <h4>Variables y tipos</h4>
+              <p>Texto, enteros, decimales, booleanos y listas.</p>
+            </article>
+            <article>
+              <h4>Condicionales</h4>
+              <p>Tomar decisiones con `if`, `elif` y `else`.</p>
+            </article>
+            <article>
+              <h4>Bucles</h4>
+              <p>Repetir tareas con `for` y `while`.</p>
+            </article>
+            <article>
+              <h4>Funciones</h4>
+              <p>Empaquetar lógica reutilizable con `def`.</p>
+            </article>
+          </div>
+          <div class="command-block">
+            <div class="command-head">
+              <h4>Ejecutar ejercicios base</h4>
+              <button class="copy-button" data-copy>Copiar</button>
+            </div>
+            <pre><code>python modulo-01/ejercicios/01_hola_python.py
+python modulo-01/ejercicios/02_variables_y_tipos.py
+python modulo-01/ejercicios/03_condicionales_y_bucles.py
+python modulo-01/ejercicios/04_funciones.py</code></pre>
+          </div>
+        </section>
+
+        <section id="practica" class="panel">
+          <p class="section-kicker">Práctica integradora</p>
+          <h3>Secuencia guiada para el cierre del módulo</h3>
+          <ol class="steps">
+            <li>Crear el fork del repositorio.</li>
+            <li>Conectar PyCharm con GitHub.</li>
+            <li>Descargar el fork al equipo desde PyCharm.</li>
+            <li>Crear el entorno `RAGLAB` desde el archivo `RAGLAB.yml`.</li>
+            <li>Activar el entorno y usarlo en PyCharm.</li>
+            <li>Ejecutar todos los ejercicios de Python.</li>
+            <li>Modificar al menos dos archivos.</li>
+            <li>Guardar cambios con un commit y subirlos a GitHub.</li>
+          </ol>
+
+          <div class="command-block">
+            <div class="command-head">
+              <h4>Secuencia mínima con Conda</h4>
+              <button class="copy-button" data-copy>Copiar</button>
+            </div>
+            <pre><code>conda env create -f RAGLAB.yml
+conda activate RAGLAB
+python modulo-01/ejercicios/01_hola_python.py
+python modulo-01/ejercicios/02_variables_y_tipos.py
+python modulo-01/ejercicios/03_condicionales_y_bucles.py
+python modulo-01/ejercicios/04_funciones.py
+git status
+git add .
+git commit -m "Completa módulo 1"
+git push origin main</code></pre>
+          </div>
+        </section>
+
+        <section id="errores" class="panel">
+          <p class="section-kicker">Soporte</p>
+          <h3>Errores comunes y cómo reaccionar</h3>
+          <div class="timeline">
+            <article>
+              <span class="timeline-label">Caso 1</span>
+              <h4>`conda` no se reconoce</h4>
+              <p>Abrir Anaconda Prompt o reiniciar la terminal después de instalar Miniconda.</p>
+            </article>
+            <article>
+              <span class="timeline-label">Caso 2</span>
+              <h4>PyCharm no encuentra el repositorio</h4>
+              <p>Verificar que la conexión con GitHub se hizo sobre la cuenta correcta del estudiante.</p>
+            </article>
+            <article>
+              <span class="timeline-label">Caso 3</span>
+              <h4>PyCharm no encuentra Python</h4>
+              <p>Seleccionar manualmente el intérprete del entorno `RAGLAB`.</p>
+            </article>
+            <article>
+              <span class="timeline-label">Caso 4</span>
+              <h4>El entorno tarda demasiado</h4>
+              <p>Es normal. El archivo del curso instala librerías pesadas como `torch` y `transformers`.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="checklist" class="panel">
+          <p class="section-kicker">Cierre</p>
+          <h3>Checklist final del módulo</h3>
+          <ul class="check-list">
+            <li>Cuenta de GitHub creada y configurada.</li>
+            <li>Git instalado y funcionando.</li>
+            <li>Miniconda instalado y funcionando.</li>
+            <li>Fork del repositorio creado en GitHub.</li>
+            <li>Proyecto descargado en local desde PyCharm.</li>
+            <li>Entorno `RAGLAB` creado correctamente.</li>
+            <li>PyCharm apuntando al intérprete correcto.</li>
+            <li>Scripts de Python ejecutados sin errores.</li>
+            <li>Al menos 2 commits hechos por el estudiante.</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
