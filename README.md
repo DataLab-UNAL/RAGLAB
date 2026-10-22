@@ -16,3 +16,4 @@ El flujo principal de este módulo está basado en:
 - Git y GitHub para control de versiones.
 - Fork del repositorio para trabajo individual de cada estudiante.
 - PyCharm como entorno de desarrollo.
+- Kiro CLI conectado a PyCharm mediante ACP para practicar programación asistida por agentes, con revisión y validación de cada cambio.

@@ -12,6 +12,8 @@ Al finalizar, el estudiante debe poder:
 - Clonar su fork y subir cambios.
 - Crear el entorno `RAGLAB` desde `RAGLAB.yml`.
 - Ejecutar scripts simples en Python.
+- Describir un cambio pequeño a un agente de programación y revisar el código que propone.
+- Ejecutar el código modificado y validar que cumple el requerimiento antes de guardarlo con Git.
 
 ## Estructura
 
@@ -53,3 +55,17 @@ python ejercicios/04_funciones.py
 - Apertura del proyecto en PyCharm.
 - Python básico.
 - Práctica integradora con cambios versionados.
+- Introducción a Kiro CLI conectado a PyCharm mediante ACP. Presentar el flujo al inicio del bloque de programación si el entorno ya está listo; si la instalación se extiende, hacer la práctica guiada después de la práctica integradora.
+- Práctica con un requerimiento pequeño: pedir un plan, revisar el diff, ejecutar el script, validar los resultados y guardar el cambio con Git.
+
+## Programación asistida por agentes
+
+Kiro se usa como apoyo para convertir un requerimiento concreto en cambios de código. No reemplaza los fundamentos de Python: cada estudiante debe poder ejecutar el script, reconocer qué cambió y comprobar que el resultado coincide con lo esperado.
+
+1. Instalar Kiro CLI desde la [guía oficial](https://kiro.dev/docs/getting-started/installation/) e iniciar sesión con `kiro-cli login`.
+2. En PyCharm, habilitar AI Assistant y agregar Kiro como agente ACP siguiendo la [guía de Kiro para JetBrains](https://kiro.dev/docs/cli/acp/).
+3. Pedir un plan antes de permitir cambios; revisar el archivo y el diff.
+4. Ejecutar el programa desde PyCharm, validar los casos esperados y volver a iterar si hace falta.
+5. Revisar `git diff` y guardar con un commit solo cuando se entienda el cambio.
+
+Kiro ofrece modelos de varios proveedores, sujetos al catálogo y plan vigentes. Al preparar esta guía, el nivel gratuito muestra 50 créditos; las suscripciones de ChatGPT o Claude no cubren el consumo de Kiro. Consultar [modelos](https://kiro.dev/docs/models/available-models/) y [precios](https://kiro.dev/pricing/) antes de la clase.
