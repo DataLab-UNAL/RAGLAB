@@ -5,7 +5,8 @@ Este repositorio incluye una primera versión del **Módulo 1** orientado a estu
 ## Estructura
 
 - `RAGLAB.yml`: entorno oficial del curso basado en Conda.
-- `docs/`: sitio estático listo para publicarse con GitHub Pages.
+- `docs/index.html`: bienvenida interactiva y portada del curso.
+- `docs/modulo-01.html`: contenidos y ruta de aprendizaje del modulo 1, listos para publicarse con GitHub Pages.
 - `modulo-01/`: materiales y ejercicios introductorios.
 
 ## Enfoque del módulo 1

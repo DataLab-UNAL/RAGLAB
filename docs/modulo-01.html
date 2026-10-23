@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RAG-LAB | Módulo 1</title>
+    <meta
+      name="description"
+      content="Módulo 1 del curso RAG-LAB: GitHub, Miniconda, PyCharm, Python básico y programación asistida por agentes."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="course-header">
+      <div class="course-header-inner">
+        <a class="course-brand" href="./index.html" aria-label="RAG-LAB, ir a bienvenida">
+          <img src="./images/brand/datalab-header.png" alt="Laboratorio de Anal&#237;tica de Datos, Sede Bogot&#225;" />
+        </a>
+        <nav class="course-top-nav" aria-label="Navegaci&#243;n principal">
+          <a href="./index.html">Bienvenida</a>
+          <a href="./modulo-01.html" aria-current="page">M&#243;dulo 1</a>
+        </nav>
+      </div>
+    </header>
+    <div class="page-shell">
+      <aside class="sidebar">
+        <p class="eyebrow">RAG-LAB</p>
+        <h1>Módulo 1</h1>
+        <p class="sidebar-copy">
+          Nivelación técnica para estudiantes sin experiencia previa en programación.
+        </p>
+        <details class="nav-disclosure" open>
+          <summary>Contenido del módulo</summary>
+          <nav class="side-nav" id="course-nav" role="tablist" aria-label="Secciones del módulo">
+          <div class="nav-group" role="group" aria-label="Conoce el módulo">
+            <p class="nav-group-title">Conoce el módulo</p>
+            <a href="#vision" role="tab" aria-selected="true" aria-controls="vision">Visión general</a>
+            <a href="#resultados" role="tab" aria-selected="false" aria-controls="resultados" tabindex="-1">Resultados</a>
+            <a href="#agenda" role="tab" aria-selected="false" aria-controls="agenda" tabindex="-1">Agenda de 8 horas</a>
+            <a href="#herramientas" role="tab" aria-selected="false" aria-controls="herramientas" tabindex="-1">Herramientas</a>
+          </div>
+          <div class="nav-group" role="group" aria-label="Ruta paso a paso">
+            <p class="nav-group-title">Ruta paso a paso</p>
+            <a href="#github" role="tab" aria-selected="false" aria-controls="github" tabindex="-1"><span class="nav-number">01</span>GitHub y Git</a>
+            <a href="#fork" role="tab" aria-selected="false" aria-controls="fork" tabindex="-1"><span class="nav-number">02</span>Fork del curso</a>
+            <a href="#miniconda" role="tab" aria-selected="false" aria-controls="miniconda" tabindex="-1"><span class="nav-number">03</span>Miniconda</a>
+            <a href="#pycharm" role="tab" aria-selected="false" aria-controls="pycharm" tabindex="-1"><span class="nav-number">04</span>PyCharm y proyecto</a>
+            <a href="#python" role="tab" aria-selected="false" aria-controls="python" tabindex="-1"><span class="nav-number">05</span>Python básico</a>
+            <a href="#practica" role="tab" aria-selected="false" aria-controls="practica" tabindex="-1"><span class="nav-number">06</span>Práctica integradora</a>
+            <a href="#kiro" role="tab" aria-selected="false" aria-controls="kiro" tabindex="-1"><span class="nav-number">07</span>Programar con Kiro</a>
+          </div>
+          <div class="nav-group" role="group" aria-label="Cierre y consulta">
+            <p class="nav-group-title">Cierre y consulta</p>
+            <a href="#errores" role="tab" aria-selected="false" aria-controls="errores" tabindex="-1">Errores comunes</a>
+            <a href="#checklist" role="tab" aria-selected="false" aria-controls="checklist" tabindex="-1">Checklist final</a>
+          </div>
+          </nav>
+        </details>
+      </aside>
+
+      <main class="content">
+        <section class="hero" id="vision">
+          <p class="hero-tag">Diseño de agentes de I.A. RAG-LAB</p>
+          <h2>Python esencial y programación con agentes antes de entrar a RAG.</h2>
+          <p class="hero-copy">
+            Primero pondrás a punto tu entorno y aprenderás lo esencial de Python. Luego usarás un
+            agente para convertir una necesidad en un cambio de código. Revisarás lo que proponga,
+            ejecutarás el programa y comprobarás que el resultado sea el esperado antes de guardar
+            los cambios con Git.
+          </p>
+          <div class="hero-cards">
+            <article class="hero-card hero-card--duration">
+              <div class="hero-card-heading">
+                <span class="hero-card-number" aria-hidden="true">01</span>
+                <span class="hero-card-label">Duración</span>
+              </div>
+              <strong>2 sesiones</strong>
+              <p>Una ruta práctica paso a paso</p>
+            </article>
+            <article class="hero-card hero-card--python">
+              <div class="hero-card-heading">
+                <span class="hero-card-number" aria-hidden="true">02</span>
+                <span class="hero-card-label">Aprende</span>
+              </div>
+              <strong>Python + PyCharm</strong>
+              <p>Entender, editar y ejecutar código</p>
+            </article>
+            <article class="hero-card hero-card--agent">
+              <div class="hero-card-heading">
+                <span class="hero-card-number" aria-hidden="true">03</span>
+                <span class="hero-card-label">Practica</span>
+              </div>
+              <strong>Kiro + validación</strong>
+              <p>Pedir, revisar y probar cada cambio</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="resultados" class="panel">
+          <p class="section-kicker">Resultados del módulo</p>
+          <h3>Al terminar, podrás llevar una idea hasta un cambio comprobado.</h3>
+          <p class="results-intro">
+            Prepara tu espacio de trabajo, entiende el código que ejecutas y usa un agente para
+            avanzar con confianza.
+          </p>
+          <div class="result-grid">
+            <article class="result-card result-card--setup">
+              <div class="result-card-heading">
+                <span class="result-number" aria-hidden="true">01</span>
+                <span class="result-label">Tu entorno</span>
+              </div>
+              <h4>Listo para trabajar</h4>
+              <ul class="result-list">
+                <li>Configurar GitHub e instalar Git, Miniconda y PyCharm.</li>
+                <li>Crear tu fork y abrirlo en el computador.</li>
+                <li>Crear el entorno `RAGLAB` y elegirlo en PyCharm.</li>
+                <li>Guardar tus avances en GitHub.</li>
+              </ul>
+            </article>
+            <article class="result-card result-card--python">
+              <div class="result-card-heading">
+                <span class="result-number" aria-hidden="true">02</span>
+                <span class="result-label">Python esencial</span>
+              </div>
+              <h4>Código que puedes entender</h4>
+              <ul class="result-list">
+                <li>Ejecutar scripts desde PyCharm.</li>
+                <li>Leer y modificar ejemplos sencillos.</li>
+                <li>Reconocer variables, condiciones, ciclos y funciones.</li>
+              </ul>
+            </article>
+            <article class="result-card result-card--agent">
+              <div class="result-card-heading">
+                <span class="result-number" aria-hidden="true">03</span>
+                <span class="result-label">Programación con Kiro</span>
+              </div>
+              <h4>Cambios que puedes validar</h4>
+              <ul class="result-list">
+                <li>Explicar un requerimiento y cómo reconocer que quedó bien.</li>
+                <li>Conectar Kiro con PyCharm y escoger un modelo disponible.</li>
+                <li>Revisar el plan y el código que propone el agente.</li>
+                <li>Ejecutar el programa y comprobar el resultado.</li>
+              </ul>
+            </article>
+          </div>
+          <div class="result-flow">
+            <div class="result-flow-copy">
+              <span>El ciclo que practicarás</span>
+              <small>Tú decides si el cambio está listo para guardar.</small>
+            </div>
+            <div class="result-flow-steps" aria-label="Describir, revisar, ejecutar, validar y guardar">
+              <span>Describir</span><b aria-hidden="true">→</b>
+              <span>Revisar</span><b aria-hidden="true">→</b>
+              <span>Ejecutar</span><b aria-hidden="true">→</b>
+              <span>Validar</span><b aria-hidden="true">→</b>
+              <span>Guardar</span>
+            </div>
+          </div>
+        </section>
+
+        <section id="herramientas" class="panel">
+          <p class="section-kicker">Herramientas base</p>
+          <h3>Las herramientas que usarás, conectadas en un solo flujo</h3>
+          <p class="tool-intro">Cada una cumple una parte del trabajo: escribir código, organizar el proyecto y convertir ideas en cambios que puedas probar.</p>
+          <div class="tool-grid">
+            <article class="tool-card tool-card--code">
+              <div class="tool-card-heading"><span>01</span><p>Aprende y ejecuta</p></div>
+              <div class="tool-brand-row">
+                <div class="tool-brand"><span class="tool-icon-frame"><img src="./images/tool-icons/python.svg" alt="" /></span><span>Python</span></div>
+                <div class="tool-brand"><span class="tool-icon-frame"><img src="./images/tool-icons/anaconda.svg" alt="" /></span><span>Miniconda</span></div>
+              </div>
+              <h4>Tu base para programar</h4>
+              <p>Python es el lenguaje de los ejercicios. Miniconda prepara el entorno `RAGLAB` y organiza sus paquetes.</p>
+              <div class="tool-flow-hint"><span>Escribir</span><b aria-hidden="true">→</b><span>Ejecutar</span></div>
+            </article>
+            <article class="tool-card tool-card--project">
+              <div class="tool-card-heading"><span>02</span><p>Organiza tu proyecto</p></div>
+              <div class="tool-brand-row">
+                <div class="tool-brand"><span class="tool-icon-frame"><img src="./images/tool-icons/git.svg" alt="" /></span><span>Git</span></div>
+                <div class="tool-brand"><span class="tool-icon-frame"><img src="./images/tool-icons/github.svg" alt="" /></span><span>GitHub</span></div>
+                <div class="tool-brand"><span class="tool-icon-frame"><img src="./images/tool-icons/pycharm.svg" alt="" /></span><span>PyCharm</span></div>
+              </div>
+              <h4>Tu espacio de trabajo</h4>
+              <p>Git registra los cambios; GitHub guarda tu fork; PyCharm te permite abrir, modificar y ejecutar el proyecto.</p>
+              <div class="tool-flow-hint"><span>Versionar</span><b aria-hidden="true">→</b><span>Compartir</span></div>
+            </article>
+            <article class="tool-card tool-card--agent">
+              <div class="tool-card-heading"><span>03</span><p>Avanza con un agente</p></div>
+              <div class="tool-brand-row">
+                <div class="tool-brand"><span class="tool-icon-frame tool-icon-frame--kiro"><img src="./images/tool-icons/kiro.svg" alt="" /></span><span>Kiro</span></div>
+              </div>
+              <h4>De la idea al cambio</h4>
+              <p>Kiro te ayuda a convertir un requerimiento en código dentro de PyCharm. Tú revisas el plan y el diff, ejecutas el programa y validas el resultado.</p>
+              <div class="tool-flow-hint"><span>Pedir</span><b aria-hidden="true">→</b><span>Revisar</span><b aria-hidden="true">→</b><span>Validar</span></div>
+            </article>
+          </div>
+        </section>
+
+        <section id="agenda" class="panel">
+          <p class="section-kicker">Plan sugerido</p>
+          <h3>Del entorno listo a programar con apoyo de un agente</h3>
+          <p class="agenda-intro">
+            Primero preparas tus herramientas y tu proyecto. Después trabajas con Python y practicas
+            cómo convertir una necesidad en un cambio de código que puedas comprobar.
+          </p>
+          <div class="agenda-grid">
+            <article class="agenda-card agenda-card--setup">
+              <header class="agenda-card-header">
+                <span class="agenda-session-number" aria-hidden="true">01</span>
+                <div>
+                  <span class="agenda-card-kicker">Sesión 1</span>
+                  <h4>Prepara tu espacio de trabajo</h4>
+                </div>
+              </header>
+              <ol class="agenda-steps">
+                <li><span>01</span><div><strong>Conoce las herramientas</strong><p>Presentación del curso y del flujo de trabajo.</p></div></li>
+                <li><span>02</span><div><strong>Abre tu espacio en GitHub</strong><p>Crea tu cuenta y prepara el repositorio personal.</p></div></li>
+                <li><span>03</span><div><strong>Instala Git</strong><p>Configura tu identidad y verifica que funcione.</p></div></li>
+                <li><span>04</span><div><strong>Crea tu fork</strong><p>Haz tu copia del repositorio del curso.</p></div></li>
+                <li><span>05</span><div><strong>Instala Miniconda</strong><p>Deja listo el gestor del entorno de Python.</p></div></li>
+                <li><span>06</span><div><strong>Prueba la terminal</strong><p>Ejecuta los primeros comandos de verificación.</p></div></li>
+              </ol>
+              <div class="agenda-outcome"><span>Al cierre</span><strong>Cuenta, Git, fork y Miniconda listos</strong></div>
+            </article>
+
+            <article class="agenda-card agenda-card--code">
+              <header class="agenda-card-header">
+                <span class="agenda-session-number" aria-hidden="true">02</span>
+                <div>
+                  <span class="agenda-card-kicker">Sesión 2</span>
+                  <h4>Programa, prueba y mejora</h4>
+                </div>
+              </header>
+              <ol class="agenda-steps">
+                <li><span>01</span><div><strong>Abre el proyecto en PyCharm</strong><p>Instala PyCharm, conéctalo a GitHub y descarga tu fork.</p></div></li>
+                <li><span>02</span><div><strong>Activa el entorno</strong><p>Crea `RAGLAB` con Conda y selecciónalo como intérprete.</p></div></li>
+                <li><span>03</span><div><strong>Aprende Python haciendo</strong><p>Practica variables, condiciones, ciclos y funciones; ejecuta los ejercicios y la práctica integradora sin agente.</p></div></li>
+                <li><span>04</span><div><strong>Prueba Kiro en PyCharm</strong><p>Presenta el flujo al inicio del bloque si el entorno ya está listo. Si la configuración toma más tiempo, haz la práctica después de la integradora: pedir un cambio, revisar el diff, ejecutar y validar.</p></div></li>
+              </ol>
+              <div class="agenda-outcome"><span>Al cierre</span><strong>Python ejecutado y un cambio revisado y validado</strong></div>
+            </article>
+          </div>
+        </section>
+
+        <section id="github" class="panel github-panel">
+          <p class="section-kicker">Paso 1 · prepara tu espacio de trabajo</p>
+          <h3>Tu proyecto, con historial y respaldo</h3>
+          <p class="github-intro">
+            En este curso usaremos <strong>Git</strong> para guardar el historial de cambios del
+            proyecto en el computador y <strong>GitHub</strong> para almacenar una copia en línea
+            del repositorio. Esto permite que cada estudiante tenga respaldo, control de versiones
+            y un espacio claro donde entregar sus avances.
+          </p>
+          <div class="resource-grid github-tools-grid">
+            <button type="button" class="github-tool-card github-tool-card--git github-tool-button" data-open-git-visual aria-haspopup="dialog" aria-controls="git-workflow-dialog" aria-label="Abrir diagrama visual de ramas y versiones de Git">
+              <div class="github-tool-heading">
+                <span class="github-tool-icon"><img src="./images/tool-icons/git.svg" alt="" /></span>
+                <div><span class="github-tool-label">En tu computador</span><h4>Git</h4></div>
+              </div>
+              <p>
+                Registra los cambios del proyecto y permite crear versiones del trabajo a medida
+                que avanza el curso.
+              </p>
+              <span class="github-tool-action">Ver diagrama de ramas <span aria-hidden="true">↗</span></span>
+            </button>
+            <article class="github-tool-card github-tool-card--github">
+              <div class="github-tool-heading">
+                <span class="github-tool-icon"><img src="./images/tool-icons/github.svg" alt="" /></span>
+                <div><span class="github-tool-label">En línea</span><h4>GitHub</h4></div>
+              </div>
+              <p>
+                Guarda el repositorio en línea, aloja el fork personal y permite sincronizar los
+                cambios del estudiante.
+              </p>
+            </article>
+          </div>
+          <div class="github-setup">
+            <div class="github-setup-heading"><span>Tu ruta de inicio</span><span>4 pasos</span></div>
+            <ol class="steps github-steps">
+              <li><span class="github-step-number">01</span><span>Crea tu cuenta en <a href="https://github.com" target="_blank" rel="noreferrer">github.com</a>.</span></li>
+              <li><span class="github-step-number">02</span><span>Confirma tu correo y completa tu perfil básico.</span></li>
+              <li><span class="github-step-number">03</span><span>Instala Git desde <a href="https://git-scm.com/downloads" target="_blank" rel="noreferrer">git-scm.com/downloads</a>.</span></li>
+              <li><span class="github-step-number">04</span><span>Abre una terminal y configura tu nombre y correo.</span></li>
+            </ol>
+          </div>
+          <div class="note-box github-location">
+            <span class="github-location-icon" aria-hidden="true">⌘</span>
+            <p><strong>¿Dónde ocurre cada parte?</strong> Crea la cuenta en el navegador y ejecuta los comandos en una terminal de tu computador: <strong>PowerShell</strong> o <strong>Git Bash</strong> en Windows, o <strong>Terminal</strong> en macOS y Linux.</p>
+          </div>
+          <div class="git-setup-guide">
+            <div class="git-setup-guide-heading">
+              <div><span class="command-eyebrow">En tu terminal</span><h4>Configura y comprueba Git paso a paso</h4></div>
+              <span class="git-setup-guide-time">4 comandos</span>
+            </div>
+            <p class="git-setup-guide-intro">Ejecuta cada comando por separado. Antes de guardar nombre y correo, reemplaza los ejemplos por tus datos reales.</p>
+            <div class="git-command-item git-command-item--check" data-copy-scope>
+              <span class="git-command-number">01</span>
+              <div class="git-command-copy"><strong>Comprueba que Git quedó instalado</strong><p>Si aparece un número de versión, la instalación terminó correctamente.</p><pre><code>git --version</code></pre></div>
+              <button class="copy-button" data-copy>Copiar</button>
+            </div>
+            <div class="git-command-item" data-copy-scope>
+              <span class="git-command-number">02</span>
+              <div class="git-command-copy"><strong>Configura el nombre que aparecerá en tus cambios</strong><p>Reemplaza <code>Tu Nombre</code> antes de ejecutar.</p><pre><code>git config --global user.name "Tu Nombre"</code></pre></div>
+              <button class="copy-button" data-copy>Copiar</button>
+            </div>
+            <div class="git-command-item" data-copy-scope>
+              <span class="git-command-number">03</span>
+              <div class="git-command-copy"><strong>Configura tu correo</strong><p>Usa el correo asociado a tu cuenta de GitHub.</p><pre><code>git config --global user.email "tu-correo@ejemplo.com"</code></pre></div>
+              <button class="copy-button" data-copy>Copiar</button>
+            </div>
+            <div class="git-command-item" data-copy-scope>
+              <span class="git-command-number">04</span>
+              <div class="git-command-copy"><strong>Define el nombre de la rama principal</strong><p>El curso usará <code>main</code> como nombre inicial.</p><pre><code>git config --global init.defaultBranch main</code></pre></div>
+              <button class="copy-button" data-copy>Copiar</button>
+            </div>
+            <div class="git-command-validation">
+              <div class="git-validation-heading"><span aria-hidden="true">✓</span><div><strong>Validación final</strong><p>Ejecuta estas dos consultas y confirma que aparezcan tu nombre y correo correctos.</p></div></div>
+              <div class="git-validation-commands">
+                <div class="git-command-item" data-copy-scope><div class="git-command-copy"><span>Nombre configurado</span><pre><code>git config --global --get user.name</code></pre></div><button class="copy-button" data-copy>Copiar</button></div>
+                <div class="git-command-item" data-copy-scope><div class="git-command-copy"><span>Correo configurado</span><pre><code>git config --global --get user.email</code></pre></div><button class="copy-button" data-copy>Copiar</button></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <dialog id="git-workflow-dialog" class="git-workflow-dialog" aria-labelledby="git-workflow-title">
+          <div class="git-dialog-header">
+            <div><p class="section-kicker">Git en una imagen</p><h2 id="git-workflow-title">Cómo se organizan los cambios</h2></div>
+            <button type="button" class="git-dialog-close" data-close-git-visual aria-label="Cerrar diagrama">×</button>
+          </div>
+          <figure class="git-workflow-figure">
+            <img src="./images/git-branch-workflow.png" alt="Diagrama de ramas de Git con líneas para Master, Hotfix, Release, Develop y Feature. Los círculos representan commits, y las conexiones muestran cómo se integran los cambios entre ramas." />
+            <figcaption>Un ejemplo de flujo de trabajo con ramas paralelas y versiones etiquetadas.</figcaption>
+          </figure>
+          <div class="git-diagram-notes">
+            <div><span class="git-diagram-dot"></span><p><strong>Cada línea</strong> representa una rama donde se puede trabajar en paralelo.</p></div>
+            <div><span class="git-diagram-dot git-diagram-dot--merge"></span><p><strong>Cada círculo</strong> representa un commit: un punto guardado en el historial.</p></div>
+            <div><span class="git-diagram-tag">v1.0</span><p><strong>Las etiquetas</strong> marcan versiones listas para identificar o compartir.</p></div>
+          </div>
+          <p class="git-diagram-context">El dibujo presenta un flujo con varias ramas. En este curso empezaremos con una estructura más sencilla: tu fork y la rama principal <code>main</code>.</p>
+          <a class="git-diagram-source" href="https://noetzold.tech/wp-content/uploads/2022/12/pasted-image-0.png" target="_blank" rel="noreferrer">Ver imagen original en noetzold.tech ↗</a>
+        </dialog>
+
+        <section id="fork" class="panel fork-panel">
+          <p class="section-kicker">Paso 2 · crea tu copia personal</p>
+          <h3>Prepara tu repositorio para trabajar</h3>
+          <p class="fork-intro">
+            Un <strong>fork</strong> es una copia del repositorio original dentro de la cuenta de
+            GitHub del estudiante. Sirve para que cada persona trabaje sobre su propia versión del
+            proyecto sin afectar directamente el repositorio del curso.
+          </p>
+          <a class="fork-repository-link" href="https://github.com/DataLab-UNAL/RAGLAB" target="_blank" rel="noreferrer">
+            <span class="fork-github-icon"><img src="./images/tool-icons/github.svg" alt="" /></span>
+            <span><small>Repositorio original del curso</small><strong>RAGLAB <span aria-hidden="true">↗</span></strong><span class="fork-repository-url">github.com/DataLab-UNAL/RAGLAB</span></span>
+            <span class="fork-open-label">Abrir repositorio</span>
+          </a>
+          <div class="fork-route">
+            <div class="fork-route-heading"><strong>Tu ruta para crear el fork</strong><span>4 pasos</span></div>
+            <ol class="fork-steps">
+              <li><span>01</span><strong>Abre el repositorio del curso</strong></li>
+              <li><span>02</span><strong>Haz clic en <em>Fork</em></strong></li>
+              <li><span>03</span><strong>Confirma que se creó en tu cuenta</strong></li>
+              <li><span>04</span><strong>Verifica que el nombre sea <code>RAGLAB</code></strong></li>
+            </ol>
+          </div>
+          <div class="fork-screenshots">
+            <figure class="image-card fork-image-card">
+              <div class="fork-image-heading"><span>01</span><strong>Encuentra el botón Fork</strong></div>
+              <button type="button" class="course-image-zoom" data-open-course-image aria-haspopup="dialog" aria-controls="course-image-dialog" aria-label="Ampliar captura: ubicación del botón Fork en GitHub">
+                <img src="./images/fork_view.png" alt="Vista de GitHub mostrando el botón Fork en el repositorio RAGLAB." />
+                <span aria-hidden="true">Ampliar imagen ⤢</span>
+              </button>
+              <figcaption>Está en la parte superior derecha del repositorio.</figcaption>
+              <div class="fork-definition">
+                <span>En pocas palabras</span>
+                <p>Un <strong>fork</strong> es una copia del repositorio que queda en tu cuenta de GitHub. Puedes trabajar y probar cambios ahí sin modificar el original del curso.</p>
+              </div>
+            </figure>
+            <figure class="image-card fork-image-card">
+              <div class="fork-image-heading"><span>02</span><strong>Revisa las opciones antes de crear</strong></div>
+              <button type="button" class="course-image-zoom" data-open-course-image aria-haspopup="dialog" aria-controls="course-image-dialog" aria-label="Ampliar captura: opciones para crear el fork">
+                <img src="./images/fork_steps.png" alt="Pantalla de GitHub para crear un fork. El nombre del repositorio es RAGLAB y la opción Copy the main branch only debe quedar desmarcada." />
+                <span aria-hidden="true">Ampliar imagen ⤢</span>
+              </button>
+              <figcaption>Mantén el nombre <strong>RAGLAB</strong> y deja desmarcada la opción <strong>Copy the main branch only</strong> para copiar el repositorio completo.</figcaption>
+            </figure>
+          </div>
+          <div class="note-box github-location fork-location">
+            <span class="github-location-icon" aria-hidden="true">↗</span>
+            <p><strong>Este paso se hace en el navegador.</strong> La copia del proyecto a tu computador se hará después, desde PyCharm.</p>
+          </div>
+        </section>
+
+        <dialog id="course-image-dialog" class="course-image-dialog" aria-labelledby="course-image-dialog-title">
+          <div class="course-image-dialog-header">
+            <h2 id="course-image-dialog-title">Captura ampliada</h2>
+            <button type="button" class="git-dialog-close" data-close-course-image aria-label="Cerrar imagen ampliada">×</button>
+          </div>
+          <img class="course-image-dialog-preview" data-course-image-preview alt="" />
+          <p class="course-image-dialog-caption" data-course-image-caption></p>
+        </dialog>
+
+        <section id="miniconda" class="panel miniconda-panel">
+          <p class="section-kicker">Paso 3 · prepara Python y sus dependencias</p>
+          <h3>Instala Miniconda y comprueba que funciona</h3>
+          <p>
+            Python es el lenguaje de programación base del curso. <strong>Miniconda</strong> nos
+            ayuda a gestionar la instalación de Python y las dependencias del proyecto de una forma
+            más ordenada y estable.
+          </p>
+          <p>
+            Para este curso tiene sentido usar Miniconda porque facilita la configuración del grupo,
+            reduce problemas de dependencias y hace más estable el trabajo con librerías pesadas.
+          </p>
+          <div class="resource-grid miniconda-info-grid">
+            <article class="miniconda-info-card miniconda-download-card">
+              <div class="miniconda-info-heading"><span class="miniconda-info-icon"><img src="./images/tool-icons/anaconda.svg" alt="" /></span><div><span>Instalación</span><h4>Descarga oficial</h4></div></div>
+              <a
+                class="miniconda-download-link"
+                href="https://www.anaconda.com/download/success?reg=skipped-miniconda"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Instalador de Miniconda <span aria-hidden="true">↗</span>
+              </a>
+              <p class="hint">
+                Cada estudiante debe descargar la versión de su sistema operativo e instalarla.
+              </p>
+            </article>
+            <article class="miniconda-info-card miniconda-goal-card">
+              <div class="miniconda-info-heading"><span class="miniconda-goal-icon" aria-hidden="true">✓</span><div><span>Meta de este paso</span><h4>Miniconda listo</h4></div></div>
+              <p>Dejar Miniconda instalado y funcionando para gestionar Python y preparar el entorno del proyecto más adelante.</p>
+            </article>
+          </div>
+          <aside class="miniconda-architecture-guide">
+            <span class="miniconda-architecture-icon" aria-hidden="true">i</span>
+            <div class="miniconda-architecture-content">
+              <strong>¿Usas Windows? Elige según el procesador</strong>
+              <div class="miniconda-architecture-options">
+                <span><b>x86_64</b> · la opción habitual para Intel y AMD</span>
+                <span><b>Arm64</b> · para equipos ARM, como algunos con Snapdragon</span>
+              </div>
+              <small>¿No sabes cuál tienes? Revisa Configuración → Sistema → Acerca de → Tipo de sistema.</small>
+            </div>
+          </aside>
+
+          <div class="miniconda-check-section">
+            <div class="miniconda-check-heading"><div><span>Comprobación rápida</span><h4>Verifica la instalación</h4></div><p>Selecciona tu sistema operativo</p></div>
+          <div class="os-switcher miniconda-os-switcher" data-tabs>
+            <div class="tab-buttons">
+              <button class="active" data-tab-target="conda-windows">Windows</button>
+              <button data-tab-target="conda-maclinux">macOS / Linux</button>
+            </div>
+            <div class="tab-panels">
+              <div class="tab-panel active" data-tab-panel="conda-windows">
+                <div class="miniconda-terminal-note"><strong>Abre Anaconda Prompt</strong><span>o una terminal donde <code>conda</code> ya esté disponible.</span></div>
+                <div class="miniconda-version-checks"><div><span>Conda</span><code>conda --version</code></div><div><span>Python</span><code>python --version</code></div></div>
+                <figure class="image-card miniconda-proof-card">
+                  <img
+                    src="./images/conda.png"
+                    alt="Consola mostrando Miniconda funcionando y el indicador base en el prompt."
+                  />
+                  <figcaption>
+                    Si ves <strong>(base)</strong> al inicio de la terminal, significa que estás en
+                    el ambiente base que instala Conda por defecto. En este paso eso es normal.
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="tab-panel" data-tab-panel="conda-maclinux">
+                <div class="miniconda-terminal-note"><strong>Abre Terminal</strong><span>la aplicación de terminal de tu sistema.</span></div>
+                <div class="miniconda-version-checks"><div><span>Conda</span><code>conda --version</code></div><div><span>Python</span><code>python --version</code></div></div>
+                <figure class="image-card miniconda-proof-card">
+                  <img
+                    src="./images/conda.png"
+                    alt="Consola mostrando Miniconda funcionando y el indicador base en el prompt."
+                  />
+                  <figcaption>
+                    Si ves <strong>(base)</strong> al inicio de la terminal, significa que Conda
+                    activó su ambiente base. Eso solo indica que Miniconda está funcionando.
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <div class="miniconda-terms-card">
+            <div class="miniconda-terms-icon" aria-hidden="true">!</div>
+            <div class="miniconda-terms-content">
+              <span class="miniconda-terms-eyebrow">Requisito final de este paso</span>
+              <h4>Lee y acepta los términos de Anaconda</h4>
+              <p>Antes de crear el entorno <code>RAGLAB</code>, revisa los términos de los canales de Anaconda. Este comando registra tu aceptación para los canales que la requieran; ejecútalo solo si estás de acuerdo.</p>
+              <div class="miniconda-terms-command" data-copy-scope>
+                <code>conda tos accept</code>
+                <button class="copy-button" data-copy>Copiar comando</button>
+              </div>
+              <small>Si todavía no has revisado los términos, no ejecutes el comando aún.</small>
+            </div>
+          </div>
+        </section>
+
+        <section id="pycharm" class="panel pycharm-panel">
+          <p class="section-kicker">Paso 4 · conecta tu entorno de trabajo</p>
+          <h3>Trae tu proyecto a PyCharm y déjalo listo para ejecutar</h3>
+          <p class="pycharm-intro">Conecta tu cuenta de GitHub, descarga tu fork y configura el entorno <code>RAGLAB</code> para trabajar desde PyCharm.</p>
+          <div class="resource-grid pycharm-overview-grid">
+            <article class="pycharm-overview-card pycharm-download-card">
+              <div class="pycharm-overview-heading"><span class="pycharm-overview-icon"><img src="./images/tool-icons/pycharm.svg" alt="" /></span><div><span>Entorno de desarrollo</span><h4>Instala PyCharm</h4></div></div>
+              <a
+                class="pycharm-download-link"
+                href="https://www.jetbrains.com/pycharm/download/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                PyCharm Community <span aria-hidden="true">↗</span>
+              </a>
+            </article>
+            <article class="pycharm-overview-card pycharm-goal-card">
+              <div class="pycharm-overview-heading"><span class="pycharm-goal-icon" aria-hidden="true">✓</span><div><span>Al terminar</span><h4>Proyecto listo para ejecutar</h4></div></div>
+              <p>Tu fork estará en el computador y PyCharm usará el entorno <code>RAGLAB</code> del proyecto.</p>
+            </article>
+          </div>
+
+          <div class="pycharm-route">
+          <div class="pycharm-route-heading"><div><span>Ruta guiada</span><h4>De tu cuenta de GitHub al proyecto en ejecución</h4></div><span>4 etapas</span></div>
+          <div class="timeline pycharm-timeline">
+            <article class="pycharm-step-card">
+              <span class="timeline-label">Subpaso 1</span>
+              <h4>Conectar PyCharm con GitHub</h4>
+              <ul>
+                <li>En PyCharm, abre `File &gt; Settings &gt; Version Control &gt; GitHub`.</li>
+                <li>Haz clic en `+` y elige `Log In via GitHub`.</li>
+                <li>Inicia sesión en el navegador y autoriza a JetBrains.</li>
+              </ul>
+            </article>
+            <article class="pycharm-step-card">
+              <span class="timeline-label">Subpaso 2</span>
+              <h4>Descargar tu fork al computador</h4>
+              <ul>
+                <li>En PyCharm, elige `Git &gt; Clone` o `Get from Version Control`.</li>
+                <li>Selecciona GitHub y tu fork personal del curso.</li>
+                <li>Elige dónde guardar el proyecto y clónalo.</li>
+              </ul>
+            </article>
+            <article class="pycharm-step-card">
+              <span class="timeline-label">Subpaso 3</span>
+              <h4>Crear el entorno del proyecto</h4>
+              <ul>
+                <li>Abre una terminal en la carpeta del proyecto.</li>
+                <li>Crea el entorno con el archivo `RAGLAB.yml`.</li>
+                <li>Activa `RAGLAB` y comprueba la versión de Python.</li>
+              </ul>
+            </article>
+            <article class="pycharm-step-card">
+              <span class="timeline-label">Subpaso 4</span>
+              <h4>Seleccionar el intérprete en PyCharm</h4>
+              <ul>
+                <li>Abre la configuración del intérprete del proyecto.</li>
+                <li>Selecciona el entorno Conda existente `RAGLAB`.</li>
+                <li>Confirma que PyCharm lo use para ejecutar los programas.</li>
+              </ul>
+            </article>
+          </div>
+          </div>
+
+          <div class="pycharm-environment-grid">
+          <div class="command-block pycharm-environment-block">
+            <div class="command-head">
+              <div><span class="command-eyebrow">En la terminal del proyecto</span><h4>Crea y valida el entorno</h4></div>
+              <button class="copy-button" data-copy>Copiar</button>
+            </div>
+            <pre><code>conda env create -f RAGLAB.yml
+conda activate RAGLAB
+python --version
+pip list</code></pre>
+          </div>
+
+          <figure class="image-card pycharm-image-card pycharm-interpreter-image">
+            <div class="pycharm-image-heading"><span>04</span><strong>Selecciona el intérprete RAGLAB</strong></div>
+            <button type="button" class="course-image-zoom" data-open-course-image aria-haspopup="dialog" aria-controls="course-image-dialog" aria-label="Ampliar captura: selección del intérprete RAGLAB en PyCharm">
+              <img src="./images/select_env.png" alt="Pantalla de PyCharm mostrando cómo seleccionar el ambiente o intérprete para ejecutar programas." />
+              <span aria-hidden="true">Ampliar imagen ⤢</span>
+            </button>
+            <figcaption>
+              Antes de ejecutar programas en PyCharm, verifica que el intérprete seleccionado sea
+              el ambiente <strong>RAGLAB</strong>.
+            </figcaption>
+          </figure>
+          </div>
+        </section>
+
+        <section id="python" class="panel">
+          <p class="section-kicker">Paso 5</p>
+          <h3>Python básico que sí necesitan para continuar el curso</h3>
+          <div class="concept-grid">
+            <article>
+              <h4>Variables y tipos</h4>
+              <p>Texto, enteros, decimales, booleanos y listas.</p>
+            </article>
+            <article>
+              <h4>Condicionales</h4>
+              <p>Tomar decisiones con `if`, `elif` y `else`.</p>
+            </article>
+            <article>
+              <h4>Bucles</h4>
+              <p>Repetir tareas con `for` y `while`.</p>
+            </article>
+            <article>
+              <h4>Funciones</h4>
+              <p>Empaquetar lógica reutilizable con `def`.</p>
+            </article>
+          </div>
+          <div class="command-block">
+            <div class="command-head">
+              <h4>Ejecutar ejercicios base</h4>
+              <button class="copy-button" data-copy>Copiar</button>
+            </div>
+            <pre><code>python modulo-01/ejercicios/01_hola_python.py
+python modulo-01/ejercicios/02_variables_y_tipos.py
+python modulo-01/ejercicios/03_condicionales_y_bucles.py
+python modulo-01/ejercicios/04_funciones.py</code></pre>
+          </div>
+        </section>
+
+        <section id="practica" class="panel">
+          <p class="section-kicker">Práctica integradora</p>
+          <h3>Secuencia guiada para el cierre del módulo</h3>
+          <ol class="steps">
+            <li>Crear el fork del repositorio.</li>
+            <li>Conectar PyCharm con GitHub.</li>
+            <li>Descargar el fork al equipo desde PyCharm.</li>
+            <li>Crear el entorno `RAGLAB` desde el archivo `RAGLAB.yml`.</li>
+            <li>Activar el entorno y usarlo en PyCharm.</li>
+            <li>Ejecutar todos los ejercicios de Python.</li>
+            <li>Modificar al menos dos archivos.</li>
+            <li>Guardar cambios con un commit y subirlos a GitHub.</li>
+          </ol>
+
+          <div class="command-block">
+            <div class="command-head">
+              <h4>Secuencia mínima con Conda</h4>
+              <button class="copy-button" data-copy>Copiar</button>
+            </div>
+            <pre><code>conda env create -f RAGLAB.yml
+conda activate RAGLAB
+python modulo-01/ejercicios/01_hola_python.py
+python modulo-01/ejercicios/02_variables_y_tipos.py
+python modulo-01/ejercicios/03_condicionales_y_bucles.py
+python modulo-01/ejercicios/04_funciones.py
+git status
+git add .
+git commit -m "Completa módulo 1"
+git push origin main</code></pre>
+          </div>
+        </section>
+
+        <section id="kiro" class="panel">
+          <p class="section-kicker">Programación asistida por agentes</p>
+          <h3>Kiro en PyCharm: del requerimiento al código que podemos validar</h3>
+          <p>
+            Kiro CLI se conecta con PyCharm mediante <strong>Agent Client Protocol (ACP)</strong>.
+            El agente puede leer archivos, proponer cambios y ejecutar comandos; la persona que
+            programa decide qué pedir, revisa los cambios y comprueba el resultado. Este ejercicio
+            usa un script pequeño para practicar el flujo antes de trabajar con proyectos RAG.
+          </p>
+
+          <div class="resource-grid">
+            <article>
+              <h4>Antes de empezar</h4>
+              <ul>
+                <li>PyCharm 2025.3.2 o posterior y el plugin AI Assistant habilitado para agentes ACP.</li>
+                <li>Kiro CLI instalado. La documentación actual indica Windows 11, macOS o Linux compatible.</li>
+                <li>Una cuenta de Kiro. Al preparar esta guía, el nivel gratuito muestra 50 créditos. El consumo se gestiona en Kiro; las suscripciones de ChatGPT o Claude no lo cubren.</li>
+              </ul>
+            </article>
+            <article>
+              <h4>Modelos</h4>
+              <p>
+                Kiro ofrece modelos de Anthropic, OpenAI y modelos de pesos abiertos. El catálogo
+                accesible y el consumo de créditos dependen del plan y pueden cambiar.
+                Para una sesión introductoria, empieza con el modelo recomendado por Kiro (Auto).
+              </p>
+            </article>
+          </div>
+
+          <div class="timeline">
+            <article>
+              <span class="timeline-label">Preparación</span>
+              <h4>Instalar y autenticar Kiro CLI</h4>
+              <ol class="steps">
+                <li>Instala Kiro CLI siguiendo la <a href="https://kiro.dev/docs/getting-started/installation/" target="_blank" rel="noreferrer">guía oficial</a>.</li>
+                <li>En una terminal, ejecuta <code>kiro-cli --version</code> para confirmar la instalación.</li>
+                <li>Ejecuta <code>kiro-cli login</code> y completa el inicio de sesión en el navegador.</li>
+                <li>Confirma la sesión con <code>kiro-cli whoami</code>.</li>
+              </ol>
+            </article>
+            <article>
+              <span class="timeline-label">Conexión</span>
+              <h4>Agregar Kiro como agente ACP</h4>
+              <ol class="steps">
+                <li>En PyCharm, abre AI Chat, selecciona la configuración y elige <strong>Add Custom Agent</strong>.</li>
+                <li>PyCharm abrirá <code>~/.jetbrains/acp.json</code>. Agrega la configuración de ejemplo y reemplaza la ruta del comando por la ruta absoluta de Kiro CLI.</li>
+                <li>Guarda el archivo. En el chat de PyCharm, selecciona <strong>Kiro Agent</strong>.</li>
+              </ol>
+            </article>
+          </div>
+
+          <div class="command-block">
+            <div class="command-head">
+              <h4>Configuración ACP de ejemplo</h4>
+              <button class="copy-button" data-copy>Copiar</button>
+            </div>
+            <pre><code>{
+  "agent_servers": {
+    "Kiro Agent": {
+      "command": "C:\\ruta\\completa\\a\\kiro-cli.exe",
+      "args": ["acp"]
+    }
+  }
+}</code></pre>
+          </div>
+
+          <div class="note-box">
+            <strong>Encontrar la ruta del ejecutable:</strong> en Windows, ejecuta
+            <code>Get-Command kiro-cli | Select-Object -ExpandProperty Source</code> en PowerShell.
+            En macOS o Linux, ejecuta <code>which kiro-cli</code>. Copia la ruta devuelta en
+            <code>command</code>; en JSON las barras invertidas de Windows se escriben dobles.
+            PyCharm requiere AI Assistant compatible con agentes ACP. Consulta la
+            <a href="https://www.jetbrains.com/help/ai-assistant/activate-agents.html" target="_blank" rel="noreferrer">guía de JetBrains para agregar agentes ACP</a> si la opción no aparece.
+          </div>
+
+          <h4>Práctica: pedir, revisar, ejecutar y validar</h4>
+          <p>
+            Abre <code>modulo-01/ejercicios/04_funciones.py</code> en el proyecto del curso y envía
+            este requerimiento al agente:
+          </p>
+          <div class="command-block">
+            <div class="command-head">
+              <h4>Requerimiento para Kiro</h4>
+              <button class="copy-button" data-copy>Copiar</button>
+            </div>
+            <pre><code>En modulo-01/ejercicios/04_funciones.py agrega una función calcular_progreso(completados, total) que retorne el porcentaje completado como número entre 0 y 100. Si total es 0, debe retornar 0. Agrega ejemplos de uso al final del archivo. No edites otros archivos. Antes de modificar el código, explícame el plan y espera mi aprobación. Después de implementar, dime cómo puedo comprobar los resultados.</code></pre>
+          </div>
+          <ol class="steps">
+            <li>Lee el plan del agente. Verifica que entendió el archivo, la fórmula y el caso <code>total = 0</code> antes de aprobarlo.</li>
+            <li>Inspecciona el diff y localiza la función, sus argumentos, el valor que retorna y el caso especial.</li>
+            <li>Ejecuta el archivo desde PyCharm. Comprueba que 2 de 4 produce 50 y que el caso con total 0 produce 0.</li>
+            <li>Si el resultado falla, comparte el error o el resultado inesperado y vuelve a probar.</li>
+            <li>Cuando entiendas el cambio, revisa <code>git diff</code> y guarda el trabajo con un commit.</li>
+          </ol>
+
+          <div class="note-box">
+            <strong>Acuerdo de trabajo:</strong> el agente propone y modifica; el estudiante conserva
+            la responsabilidad de leer el cambio, ejecutarlo y decidir si cumple el requerimiento.
+            Antes de guardar el cambio, cada estudiante debe poder explicar qué se modificó y cómo
+            comprobó que funciona.
+          </div>
+          <p class="hint">
+            Documentación: <a href="https://kiro.dev/docs/cli/acp/" target="_blank" rel="noreferrer">Kiro CLI con ACP</a>,
+            <a href="https://kiro.dev/docs/models/available-models/" target="_blank" rel="noreferrer">modelos disponibles</a> y
+            <a href="https://kiro.dev/pricing/" target="_blank" rel="noreferrer">planes y créditos</a>.
+          </p>
+        </section>
+
+        <section id="errores" class="panel">
+          <p class="section-kicker">Soporte</p>
+          <h3>Errores comunes y cómo reaccionar</h3>
+          <div class="timeline">
+            <article>
+              <span class="timeline-label">Caso 1</span>
+              <h4>`conda` no se reconoce</h4>
+              <p>Abrir Anaconda Prompt o reiniciar la terminal después de instalar Miniconda.</p>
+            </article>
+            <article>
+              <span class="timeline-label">Caso 2</span>
+              <h4>PyCharm no encuentra el repositorio</h4>
+              <p>Verificar que la conexión con GitHub se hizo sobre la cuenta correcta del estudiante.</p>
+            </article>
+            <article>
+              <span class="timeline-label">Caso 3</span>
+              <h4>PyCharm no encuentra Python</h4>
+              <p>Seleccionar manualmente el intérprete del entorno `RAGLAB`.</p>
+            </article>
+            <article>
+              <span class="timeline-label">Caso 4</span>
+              <h4>El entorno tarda demasiado</h4>
+              <p>Es normal. El archivo del curso instala librerías pesadas como `torch` y `transformers`.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="checklist" class="panel">
+          <p class="section-kicker">Cierre</p>
+          <h3>Checklist final del módulo</h3>
+          <ul class="check-list">
+            <li>Cuenta de GitHub creada y configurada.</li>
+            <li>Git instalado y funcionando.</li>
+            <li>Miniconda instalado y funcionando.</li>
+            <li>Fork del repositorio creado en GitHub.</li>
+            <li>Proyecto descargado en local desde PyCharm.</li>
+            <li>Entorno `RAGLAB` creado correctamente.</li>
+            <li>PyCharm apuntando al intérprete correcto.</li>
+            <li>Scripts de Python ejecutados sin errores.</li>
+            <li>Un requerimiento implementado con Kiro, revisado en el diff y validado al ejecutar el script.</li>
+            <li>Al menos 2 commits hechos por el estudiante.</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <footer class="course-footer">
+      <div class="course-footer-inner">
+        <p>RAG-LAB <span>&middot;</span> Curso de chatbots inteligentes</p>
+        <img src="./images/brand/datalab-footer.jpg" alt="DataLab UNAL" />
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
