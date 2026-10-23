@@ -84,13 +84,15 @@ const copyButtons = document.querySelectorAll("[data-copy]");
 
 copyButtons.forEach((button) => {
   button.addEventListener("click", async () => {
-    const code = button.closest("[data-copy-scope]")?.querySelector("code")
-      || button.closest(".command-block")?.querySelector("code");
-    if (!code) {
+    const copyScope = button.closest("[data-copy-scope]");
+    const copyTarget = copyScope?.querySelector("pre")
+      || copyScope?.querySelector("code")
+      || button.closest(".command-block")?.querySelector("pre, code");
+    if (!copyTarget) {
       return;
     }
 
-    await navigator.clipboard.writeText(code.innerText);
+    await navigator.clipboard.writeText(copyTarget.innerText);
     const previousLabel = button.textContent;
     button.textContent = "Copiado";
     button.classList.add("copied");
