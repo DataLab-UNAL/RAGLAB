@@ -1363,6 +1363,68 @@ a {
   line-height: 1.45;
 }
 
+.miniconda-path-warning {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: 18px;
+  margin-top: 16px;
+  padding: clamp(16px, 2.5vw, 22px);
+  border: 1px solid rgba(194, 119, 42, 0.24);
+  border-radius: 22px;
+  background: linear-gradient(115deg, #fff3e1, #fffbf5 74%);
+  box-shadow: 0 10px 24px rgba(133, 89, 43, 0.06);
+}
+
+.miniconda-path-warning-label {
+  color: #a45f20;
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.miniconda-path-warning-copy h4 {
+  margin: 6px 0 8px;
+  color: #463521;
+  font-size: 1.03rem;
+}
+
+.miniconda-path-warning-copy p {
+  margin: 0;
+  color: #6f6253;
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.miniconda-path-warning-copy p + p {
+  margin-top: 8px;
+}
+
+.miniconda-path-warning-copy code {
+  padding: 1px 5px;
+  border-radius: 5px;
+  background: rgba(194, 119, 42, 0.12);
+  color: #81501f;
+  font-size: 0.83em;
+}
+
+.miniconda-path-warning-image {
+  min-width: 0;
+  margin: 0;
+  padding: 8px;
+  border: 1px solid rgba(29, 35, 48, 0.1);
+  border-radius: 16px;
+  background: white;
+}
+
+.miniconda-path-warning-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
 .miniconda-info-card .hint {
   margin: 9px 0 0;
   font-size: 0.8rem;
@@ -1491,6 +1553,13 @@ a {
   background: #252b39;
 }
 
+.miniconda-version-check-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
 .miniconda-version-checks span {
   color: #c6cede;
   font-size: 0.65rem;
@@ -1502,6 +1571,20 @@ a {
 .miniconda-version-checks code {
   color: #f2f4fa;
   font-size: 0.83rem;
+}
+
+.miniconda-version-checks .copy-button {
+  padding: 4px 9px;
+  border-color: rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.08);
+  color: #f2f4fa;
+  font-size: 0.72rem;
+}
+
+.miniconda-version-checks .copy-button.copied {
+  border-color: #b8e5c0;
+  background: #d8f3dc;
+  color: #1f5130;
 }
 
 .miniconda-proof-card {
@@ -1608,6 +1691,658 @@ a {
   color: #8b7258;
   font-size: 0.72rem;
   line-height: 1.45;
+}
+
+.python-panel {
+  --python-accent: #28735e;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 100% 0, rgba(40, 115, 94, 0.1), transparent 34%),
+    var(--panel);
+}
+
+.python-panel > .section-kicker {
+  color: var(--python-accent);
+}
+
+.python-panel h3 {
+  max-width: 850px;
+  font-size: clamp(1.65rem, 2.5vw, 2.2rem);
+}
+
+.python-concept-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 16px;
+  margin: 24px 0 22px;
+}
+
+.python-concept-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(140px, 0.82fr);
+  align-items: stretch;
+  gap: 16px;
+  width: 100%;
+  min-height: 196px;
+  padding: 18px;
+  border: 1px solid rgba(40, 115, 94, 0.16);
+  border-radius: 22px;
+  color: var(--ink);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  background: linear-gradient(140deg, rgba(255, 255, 255, 0.97), rgba(247, 251, 248, 0.88));
+  box-shadow: 0 10px 24px rgba(29, 35, 48, 0.055);
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.python-concept-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(40, 115, 94, 0.36);
+  box-shadow: 0 15px 30px rgba(29, 65, 51, 0.11);
+}
+
+.python-concept-card:focus-visible {
+  outline: 3px solid rgba(40, 115, 94, 0.42);
+  outline-offset: 3px;
+}
+
+.python-concept-copy {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.python-concept-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 154px;
+  max-height: 190px;
+  align-self: center;
+  object-fit: contain;
+  border: 1px solid rgba(40, 115, 94, 0.1);
+  border-radius: 15px;
+  background: #f4f8f5;
+}
+
+.python-topic-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.python-topic-heading > span {
+  display: grid;
+  width: 32px;
+  height: 32px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 10px;
+  background: rgba(40, 115, 94, 0.1);
+  color: var(--python-accent);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.66rem;
+  font-weight: 700;
+}
+
+.python-topic-heading strong {
+  font-size: 1rem;
+}
+
+.python-concept-description {
+  display: block;
+  margin: 12px 0 0 42px;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+
+.python-concept-description code {
+  padding: 1px 5px;
+  border-radius: 5px;
+  background: rgba(40, 115, 94, 0.09);
+  color: #245f4f;
+  font-size: 0.84em;
+}
+
+.python-card-action {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: auto 0 0 42px;
+  padding-top: 15px;
+  color: var(--python-accent);
+  font-size: 0.73rem;
+  font-weight: 700;
+}
+
+.python-card-action > span {
+  display: grid;
+  width: 23px;
+  height: 23px;
+  place-items: center;
+  border: 1px solid rgba(40, 115, 94, 0.17);
+  border-radius: 50%;
+  background: #fff;
+}
+
+.python-concept-card:hover .python-card-action > span {
+  background: var(--python-accent);
+  color: white;
+}
+
+.python-exercises {
+  margin: 0;
+  padding: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(145deg, #292f3d, #1b202c);
+  box-shadow: 0 12px 24px rgba(23, 28, 39, 0.12);
+}
+
+.python-exercises .command-eyebrow {
+  display: block;
+  margin-bottom: 4px;
+  color: #bdc5d5;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.python-exercises .command-head h4 {
+  margin: 0;
+}
+
+.python-run-guide {
+  display: grid;
+  grid-template-columns: minmax(210px, 0.7fr) minmax(0, 1.3fr);
+  align-items: center;
+  gap: 18px;
+  margin: 20px 0 26px;
+  padding: 18px;
+  border: 1px solid rgba(40, 115, 94, 0.16);
+  border-radius: 22px;
+  background: linear-gradient(135deg, #f0f7f3, #fff 68%);
+}
+
+.python-guide-eyebrow {
+  color: #28735e;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.python-run-guide-copy h4,
+.python-terminal-heading h4 {
+  margin: 7px 0 8px;
+  font-size: 1.08rem;
+}
+
+.python-run-guide-copy p,
+.python-terminal-heading p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.83rem;
+  line-height: 1.6;
+}
+
+.python-run-guide-copy code,
+.python-terminal-heading code {
+  color: #245f4f;
+}
+
+.python-run-figure {
+  min-width: 0;
+  margin: 0;
+  padding: 10px;
+  border-color: rgba(40, 115, 94, 0.14);
+  border-radius: 16px;
+  background: #fff;
+}
+
+.python-run-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(29, 35, 48, 0.1);
+  border-radius: 10px;
+}
+
+.python-run-figure figcaption {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.73rem;
+}
+
+.python-run-figure figcaption strong {
+  color: #28735e;
+}
+
+.python-terminal-practice {
+  margin-top: 24px;
+}
+
+.python-terminal-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 14px;
+}
+
+.python-terminal-heading > p {
+  max-width: 440px;
+}
+
+.python-command-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.python-command-card {
+  min-width: 0;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 17px;
+  background: linear-gradient(145deg, #292f3d, #1b202c);
+  color: #eff3ff;
+  box-shadow: 0 9px 20px rgba(23, 28, 39, 0.1);
+}
+
+.python-command-card-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.python-command-card-heading > strong {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+  font-size: 0.82rem;
+}
+
+.python-command-card-heading > strong span {
+  display: grid;
+  width: 26px;
+  height: 26px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 8px;
+  background: rgba(120, 207, 166, 0.15);
+  color: #9de0bd;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.63rem;
+}
+
+.python-command-card .copy-button {
+  flex: 0 0 auto;
+  padding: 6px 11px;
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  color: #f4f6fa;
+  font-size: 0.72rem;
+}
+
+.python-command-card .copy-button.copied {
+  border-color: #b8e5c0;
+  background: #d8f3dc;
+  color: #1f5130;
+}
+
+.python-command-card pre {
+  margin: 12px 0 0;
+  color: #e4e9f4;
+  font-size: 0.76rem;
+  line-height: 1.5;
+  white-space: pre;
+}
+
+.commit-panel {
+  --commit-accent: #28735e;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 100% 0, rgba(40, 115, 94, 0.09), transparent 35%),
+    var(--panel);
+}
+
+.commit-panel > .section-kicker {
+  color: var(--commit-accent);
+}
+
+.commit-panel h3 {
+  max-width: 850px;
+  font-size: clamp(1.65rem, 2.5vw, 2.2rem);
+}
+
+.commit-intro {
+  max-width: 790px;
+  margin: 12px 0 22px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.commit-intro code,
+.gitignore-note code,
+.commit-terminal-heading code {
+  padding: 1px 5px;
+  border-radius: 5px;
+  background: rgba(40, 115, 94, 0.09);
+  color: #245f4f;
+}
+
+.commit-learning-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  align-items: stretch;
+  gap: 16px;
+}
+
+.commit-change-card,
+.gitignore-card {
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid rgba(40, 115, 94, 0.15);
+  border-radius: 21px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.98), rgba(247, 251, 248, 0.9));
+  box-shadow: 0 10px 24px rgba(29, 35, 48, 0.045);
+}
+
+.commit-card-heading {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 14px;
+}
+
+.commit-card-heading > span,
+.commit-image-heading > span {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 11px;
+  background: rgba(40, 115, 94, 0.11);
+  color: var(--commit-accent);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.commit-card-heading small,
+.commit-guide-eyebrow {
+  display: block;
+  color: var(--commit-accent);
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.commit-card-heading h4 {
+  margin: 3px 0 0;
+  font-size: 0.98rem;
+}
+
+.commit-change-image {
+  margin: 0;
+  padding: 10px;
+  border-color: rgba(40, 115, 94, 0.13);
+  border-radius: 16px;
+  background: #fff;
+}
+
+.commit-change-image img,
+.commit-pycharm-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(29, 35, 48, 0.1);
+  border-radius: 10px;
+}
+
+.commit-change-image figcaption,
+.commit-pycharm-image figcaption {
+  margin-top: 9px;
+  color: var(--muted);
+  font-size: 0.74rem;
+  line-height: 1.5;
+}
+
+.gitignore-card > p {
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+
+.gitignore-examples {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 11px;
+}
+
+.gitignore-list {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 7px;
+  padding: 13px;
+  border: 1px solid rgba(40, 115, 94, 0.12);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.gitignore-list > strong {
+  margin-bottom: 2px;
+  color: #34443c;
+  font-size: 0.76rem;
+}
+
+.gitignore-list code {
+  width: fit-content;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  color: #52675a;
+  font-size: 0.7rem;
+}
+
+.gitignore-ignored {
+  border-color: rgba(167, 111, 44, 0.16);
+  background: #fffaf2;
+}
+
+.gitignore-ignored > strong {
+  color: #8e5c20;
+}
+
+.gitignore-note {
+  margin: 13px 0 0 !important;
+  padding: 11px 12px;
+  border-radius: 12px;
+  background: rgba(40, 115, 94, 0.07);
+  color: #536b5e !important;
+  font-size: 0.74rem !important;
+}
+
+.commit-pycharm-guide {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.7fr) minmax(0, 1.3fr);
+  align-items: center;
+  gap: 17px;
+  margin-top: 18px;
+}
+
+.commit-definition {
+  padding: 20px;
+  border: 1px solid rgba(40, 115, 94, 0.17);
+  border-radius: 20px;
+  background: linear-gradient(145deg, #edf7f1, #fbfdfb);
+}
+
+.commit-definition h4 {
+  margin: 8px 0 10px;
+  font-size: 1.02rem;
+  line-height: 1.4;
+}
+
+.commit-definition p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.65;
+}
+
+.commit-pycharm-image {
+  min-width: 0;
+  margin: 0;
+  padding: 13px;
+  border-color: rgba(40, 115, 94, 0.15);
+  border-radius: 19px;
+  background: #fff;
+}
+
+.commit-image-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 11px;
+  font-size: 0.84rem;
+}
+
+.commit-terminal-guide {
+  margin-top: 22px;
+  padding: 20px;
+  border: 1px solid rgba(40, 115, 94, 0.14);
+  border-radius: 21px;
+  background: linear-gradient(135deg, #f0f7f3, #fff 72%);
+}
+
+.commit-terminal-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 15px;
+}
+
+.commit-terminal-heading h4 {
+  margin: 5px 0 0;
+  font-size: 1rem;
+}
+
+.commit-terminal-heading > p {
+  max-width: 430px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+
+.commit-command-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 11px;
+}
+
+.commit-command-card {
+  min-width: 0;
+  padding: 13px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  background: linear-gradient(145deg, #292f3d, #1b202c);
+  color: #eff3ff;
+  box-shadow: 0 8px 18px rgba(23, 28, 39, 0.09);
+}
+
+.commit-command-card > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.commit-command-card strong {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  font-size: 0.77rem;
+}
+
+.commit-command-card strong span {
+  display: grid;
+  width: 25px;
+  height: 25px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 8px;
+  background: rgba(120, 207, 166, 0.15);
+  color: #9de0bd;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.62rem;
+}
+
+.commit-command-card .copy-button {
+  flex: 0 0 auto;
+  padding: 6px 10px;
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  color: #f4f6fa;
+  font-size: 0.7rem;
+}
+
+.commit-command-card .copy-button.copied {
+  border-color: #b8e5c0;
+  background: #d8f3dc;
+  color: #1f5130;
+}
+
+.commit-command-card pre {
+  margin: 11px 0 0;
+  color: #e4e9f4;
+  font-size: 0.76rem;
+  line-height: 1.5;
+  white-space: pre;
+}
+
+@media (max-width: 900px) {
+  .commit-pycharm-guide {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .commit-learning-grid,
+  .commit-command-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .commit-terminal-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .commit-terminal-guide {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 420px) {
+  .gitignore-examples {
+    grid-template-columns: 1fr;
+  }
 }
 
 .pycharm-panel {
@@ -1769,7 +2504,7 @@ a {
 }
 
 .pycharm-timeline {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 11px;
 }
 
@@ -1778,6 +2513,19 @@ a {
   padding: 16px !important;
   border-color: rgba(107, 85, 201, 0.12) !important;
   background: rgba(255, 255, 255, 0.88) !important;
+}
+
+.pycharm-github-step {
+  grid-column: 1 / -1;
+}
+
+.pycharm-fork-step {
+  grid-column: 1 / -1;
+}
+
+.pycharm-environment-step,
+.pycharm-interpreter-step {
+  grid-column: 1 / -1;
 }
 
 .pycharm-step-card .timeline-label {
@@ -1798,7 +2546,8 @@ a {
   line-height: 1.4;
 }
 
-.pycharm-step-card ul {
+.pycharm-step-card ul,
+.pycharm-step-card ol {
   margin: 0;
   padding-left: 17px;
   color: var(--muted);
@@ -1858,12 +2607,89 @@ a {
   line-height: 1.5;
 }
 
-.pycharm-environment-grid {
+.pycharm-login-screenshots {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.pycharm-fork-guide {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.pycharm-login-image-card img {
+  height: auto;
+  object-fit: contain;
+}
+
+.pycharm-repo-image-card img {
+  height: auto;
+  object-fit: contain;
+}
+
+.pycharm-step-horizontal {
   display: grid;
   grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
   align-items: stretch;
   gap: 14px;
-  margin-top: 14px;
+  margin-top: 12px;
+}
+
+.pycharm-step-instructions {
+  align-self: center;
+  padding: 15px 15px 15px 37px !important;
+  border: 1px solid rgba(107, 85, 201, 0.12);
+  border-radius: 15px;
+  background: linear-gradient(145deg, #f8f6ff, #fff 78%);
+  font-size: 0.82rem !important;
+  line-height: 1.7 !important;
+}
+
+.pycharm-step-instructions li::marker {
+  color: #6b55c9;
+  font-weight: 700;
+}
+
+.pycharm-step-instructions li + li {
+  margin-top: 8px;
+}
+
+.pycharm-terminal-guide {
+  display: grid;
+  min-width: 0;
+  align-content: center;
+  gap: 12px;
+}
+
+.pycharm-terminal-screenshots {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.pycharm-terminal-image {
+  min-width: 0;
+  margin: 0;
+  padding: 10px;
+}
+
+.pycharm-terminal-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(29, 35, 48, 0.1);
+  border-radius: 10px;
+}
+
+.pycharm-terminal-image figcaption {
+  margin-top: 8px;
+  font-size: 0.7rem;
 }
 
 .pycharm-environment-block {
@@ -1875,6 +2701,8 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: linear-gradient(145deg, #292f3d, #1b202c);
   box-shadow: 0 12px 24px rgba(23, 28, 39, 0.12);
+  border-radius: 18px;
+  padding: 20px;
 }
 
 .pycharm-environment-block .command-eyebrow {
@@ -1893,6 +2721,36 @@ a {
   display: flex;
   min-width: 0;
   flex-direction: column;
+  margin: 0;
+  padding: 14px;
+}
+
+.pycharm-interpreter-layout {
+  display: grid;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.pycharm-interpreter-note {
+  margin: 0;
+  padding: 13px 16px;
+  border: 1px solid rgba(107, 85, 201, 0.12);
+  border-radius: 14px;
+  background: linear-gradient(145deg, #f8f6ff, #fff 78%);
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.pycharm-interpreter-note code {
+  color: #5947b5;
+}
+
+.pycharm-interpreter-screenshots {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 14px;
 }
 
 .pycharm-interpreter-image img {
@@ -2723,9 +3581,42 @@ pre {
     grid-template-columns: 1fr;
   }
 
-  .pycharm-timeline,
-  .pycharm-environment-grid {
+  .pycharm-timeline {
     grid-template-columns: 1fr;
+  }
+
+  .pycharm-login-screenshots,
+  .pycharm-fork-guide,
+  .pycharm-terminal-screenshots,
+  .pycharm-interpreter-screenshots {
+    grid-template-columns: 1fr;
+  }
+
+  .python-run-guide {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+
+  .python-terminal-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .python-command-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .python-concept-card {
+    grid-template-columns: 1fr;
+    gap: 13px;
+    min-height: 0;
+    padding: 15px;
+  }
+
+  .python-concept-card img {
+    min-height: 0;
+    max-height: 170px;
   }
 
   .pycharm-route-heading {
@@ -2764,6 +3655,10 @@ pre {
   }
 
   .miniconda-architecture-options {
+    grid-template-columns: 1fr;
+  }
+
+  .miniconda-path-warning {
     grid-template-columns: 1fr;
   }
 
@@ -2843,6 +3738,12 @@ pre {
   }
 }
 
+@media (max-width: 440px) {
+  .pycharm-step-horizontal {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 960px) {
   .course-header-inner {
     min-height: 82px;
@@ -2899,5 +3800,372 @@ pre {
   .course-footer-inner img {
     width: 46%;
     height: 58px;
+  }
+}
+
+
+/* Kiro guide: introduction, setup and practice */
+.kiro-panel {
+  --kiro-accent: #28735e;
+  --kiro-accent-soft: #e8f4ee;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 100% 0, rgba(40, 115, 94, 0.11), transparent 34%),
+    var(--panel);
+}
+
+.kiro-panel > .section-kicker {
+  color: var(--kiro-accent);
+}
+
+.kiro-panel > h3 {
+  max-width: 900px;
+  margin-bottom: 22px;
+}
+
+.kiro-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(340px, 0.9fr);
+  gap: 24px;
+  align-items: center;
+  padding: clamp(22px, 3vw, 34px);
+  border: 1px solid #cfe4d8;
+  border-radius: 26px;
+  background: linear-gradient(125deg, #edf7f2, rgba(255, 255, 255, 0.88) 72%);
+  box-shadow: 0 16px 36px rgba(29, 35, 48, 0.06);
+}
+
+.kiro-intro-label,
+.kiro-section-heading > span,
+.kiro-code-label {
+  color: var(--kiro-accent);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.kiro-intro-copy p {
+  margin: 10px 0 0;
+  color: var(--muted);
+  line-height: 1.72;
+}
+
+.kiro-intro-copy p strong {
+  color: var(--ink);
+}
+
+.kiro-flow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+}
+
+.kiro-flow > div {
+  display: grid;
+  min-height: 132px;
+  align-content: center;
+  justify-items: center;
+  gap: 7px;
+  padding: 12px 8px;
+  border: 1px solid rgba(40, 115, 94, 0.14);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.78);
+  text-align: center;
+}
+
+.kiro-flow > div > span,
+.kiro-stage-number {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border-radius: 11px;
+  background: var(--kiro-accent-soft);
+  color: var(--kiro-accent);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.kiro-flow strong {
+  font-size: 0.86rem;
+}
+
+.kiro-flow small {
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1.4;
+}
+
+.kiro-flow > b {
+  color: var(--kiro-accent);
+  font-size: 1.15rem;
+}
+
+.kiro-acp-note,
+.kiro-model-note,
+.kiro-responsibility {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 16px 0 30px;
+  padding: 16px 19px;
+  border: 1px solid #d9e8e0;
+  border-radius: 17px;
+  background: rgba(255, 255, 255, 0.74);
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.kiro-acp-note strong,
+.kiro-model-note strong,
+.kiro-responsibility strong {
+  color: var(--ink);
+}
+
+.kiro-prerequisites {
+  margin-top: 26px;
+}
+
+.kiro-section-heading {
+  margin-bottom: 14px;
+}
+
+.kiro-section-heading h4,
+.kiro-setup-heading h4,
+.kiro-practice-heading h4 {
+  margin: 5px 0 0;
+  font-size: 1.25rem;
+}
+
+.kiro-prerequisite-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.kiro-info-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  min-width: 0;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 10px 24px rgba(29, 35, 48, 0.045);
+}
+
+.kiro-info-icon {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  place-items: center;
+  border-radius: 14px;
+  background: var(--kiro-accent-soft);
+  color: var(--kiro-accent);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.69rem;
+  font-weight: 700;
+}
+
+.kiro-info-card h5 {
+  margin: 1px 0 5px;
+  font-size: 0.94rem;
+}
+
+.kiro-info-card p,
+.kiro-model-note p,
+.kiro-responsibility p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.58;
+}
+
+.kiro-model-note {
+  margin: 14px 0 34px;
+  background: #f4f7f5;
+}
+
+.kiro-model-note > span,
+.kiro-responsibility > span {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  place-items: center;
+  border-radius: 10px;
+  background: var(--kiro-accent);
+  color: white;
+  font-weight: 800;
+}
+
+.kiro-setup-heading,
+.kiro-practice-heading {
+  margin: 30px 0 15px;
+}
+
+.kiro-setup-heading > p,
+.kiro-practice-heading > p {
+  margin: 7px 0 0;
+  color: var(--muted);
+}
+
+.kiro-timeline {
+  align-items: stretch;
+}
+
+.kiro-stage-card {
+  border-top: 3px solid #77ad96 !important;
+  background: linear-gradient(155deg, #f2f8f4, rgba(255, 255, 255, 0.94) 55%) !important;
+  box-shadow: 0 12px 28px rgba(29, 35, 48, 0.05);
+}
+
+.kiro-stage-card > header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.kiro-stage-card .timeline-label {
+  color: var(--kiro-accent);
+}
+
+.kiro-stage-card h4 {
+  margin: 3px 0 0;
+  font-size: 1.02rem;
+}
+
+.kiro-stage-card .steps {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.kiro-config-block,
+.kiro-prompt-block {
+  padding: 22px 24px;
+}
+
+.kiro-config-block .command-head h4 {
+  margin: 4px 0 0;
+}
+
+.kiro-path-note {
+  border-color: #d9e8e0;
+  background: #f5f8f5;
+}
+
+.kiro-validation-steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.kiro-validation-steps li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 0;
+  padding: 15px;
+  border: 1px solid var(--line);
+  border-radius: 17px;
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.kiro-validation-steps li > span {
+  display: grid;
+  width: 28px;
+  height: 28px;
+  flex: 0 0 28px;
+  place-items: center;
+  border-radius: 9px;
+  background: var(--kiro-accent-soft);
+  color: var(--kiro-accent);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.kiro-validation-steps strong {
+  font-size: 0.85rem;
+}
+
+.kiro-validation-steps p {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+.kiro-responsibility {
+  align-items: center;
+  margin: 20px 0 12px;
+  border-color: #cfe4d8;
+  background: #edf7f2;
+}
+
+.kiro-doc-links {
+  margin-top: 14px;
+}
+
+@media (max-width: 1100px) {
+  .kiro-intro {
+    grid-template-columns: 1fr;
+  }
+
+  .kiro-flow > div {
+    min-height: 112px;
+  }
+
+  .kiro-prerequisite-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .kiro-validation-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .kiro-intro {
+    padding: 18px;
+  }
+
+  .kiro-flow {
+    grid-template-columns: 1fr;
+  }
+
+  .kiro-flow > b {
+    justify-self: center;
+    transform: rotate(90deg);
+  }
+
+  .kiro-flow > div {
+    min-height: 0;
+    grid-template-columns: 36px 1fr;
+    justify-items: start;
+    text-align: left;
+  }
+
+  .kiro-flow small {
+    grid-column: 2;
+  }
+
+  .kiro-validation-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .kiro-config-block,
+  .kiro-prompt-block {
+    padding: 16px;
   }
 }

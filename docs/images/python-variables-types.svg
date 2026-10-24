@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Variables y tipos de datos en Python</title><desc id="desc">Ejemplos de texto, número, booleano y lista, con sus valores guardados.</desc>
+  <rect width="640" height="360" rx="24" fill="#f4f8f5"/><text x="30" y="43" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#24332e">Una variable guarda un valor</text>
+  <rect x="28" y="64" width="282" height="265" rx="16" fill="#202633"/><text x="50" y="97" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.5" fill="#aeb9c9">EJEMPLOS EN PYTHON</text>
+  <g font-family="Consolas,monospace" font-size="15"><text x="50" y="142" fill="#d9e2ef">nombre = <tspan fill="#9de1bd">"Ada"</tspan></text><text x="50" y="187" fill="#d9e2ef">edad = <tspan fill="#f0c774">36</tspan></text><text x="50" y="232" fill="#d9e2ef">activo = <tspan fill="#b5a1f0">True</tspan></text><text x="50" y="277" fill="#d9e2ef">temas = <tspan fill="#9de1bd">["RAG", "Python"]</tspan></text></g>
+  <path d="M320 139h35m-9-8 9 8-9 8M320 184h35m-9-8 9 8-9 8M320 229h35m-9-8 9 8-9 8M320 274h35m-9-8 9 8-9 8" fill="none" stroke="#4a9b79" stroke-width="2"/>
+  <g font-family="Arial,sans-serif">
+    <rect x="368" y="117" width="242" height="44" rx="12" fill="#fff" stroke="#cfe2d6"/><text x="386" y="134" font-size="11" font-weight="700" fill="#4b7f69">TEXTO</text><text x="386" y="153" font-size="14" fill="#25332e">nombre → Ada</text>
+    <rect x="368" y="162" width="242" height="44" rx="12" fill="#fff" stroke="#cfe2d6"/><text x="386" y="179" font-size="11" font-weight="700" fill="#4b7f69">NÚMERO</text><text x="386" y="198" font-size="14" fill="#25332e">edad → 36</text>
+    <rect x="368" y="207" width="242" height="44" rx="12" fill="#fff" stroke="#cfe2d6"/><text x="386" y="224" font-size="11" font-weight="700" fill="#4b7f69">BOOLEANO</text><text x="386" y="243" font-size="14" fill="#25332e">activo → True</text>
+    <rect x="368" y="252" width="242" height="44" rx="12" fill="#fff" stroke="#cfe2d6"/><text x="386" y="269" font-size="11" font-weight="700" fill="#4b7f69">LISTA</text><text x="386" y="288" font-size="13" fill="#25332e">temas → ["RAG", "Python"]</text>
+  </g>
+</svg>

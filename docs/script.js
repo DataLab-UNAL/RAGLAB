@@ -119,6 +119,7 @@ if (gitWorkflowDialog && openGitVisualButton) {
 const courseImageDialog = document.querySelector("#course-image-dialog");
 const courseImagePreview = document.querySelector("[data-course-image-preview]");
 const courseImageCaption = document.querySelector("[data-course-image-caption]");
+const courseImageTitle = document.querySelector("[data-course-image-title]");
 
 if (courseImageDialog && courseImagePreview && courseImageCaption) {
   document.querySelectorAll("[data-open-course-image]").forEach((button) => {
@@ -129,7 +130,10 @@ if (courseImageDialog && courseImagePreview && courseImageCaption) {
 
       courseImagePreview.src = image.src;
       courseImagePreview.alt = image.alt;
-      courseImageCaption.textContent = caption?.innerText || image.alt;
+      courseImageCaption.textContent = button.dataset.imageCaption || caption?.innerText || image.alt;
+      if (courseImageTitle) {
+        courseImageTitle.textContent = button.dataset.imageTitle || "Captura ampliada";
+      }
       courseImageDialog.showModal();
     });
   });

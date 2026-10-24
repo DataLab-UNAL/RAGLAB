@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 282" role="img" aria-labelledby="title desc">
+  <title id="title">Opción de PATH del instalador de Miniconda para Windows</title>
+  <desc id="desc">La casilla Add installation to my PATH environment variable aparece marcada y acompañada por la advertencia del instalador.</desc>
+  <rect width="500" height="282" rx="12" fill="#f2f2f2" stroke="#c8c8c8"/>
+  <rect x="1" y="1" width="498" height="27" rx="11" fill="#f7f9f3"/><circle cx="13" cy="14" r="5" fill="#d9f1cd" stroke="#4fa83d"/><text x="26" y="18" font-family="Arial,sans-serif" font-size="12" fill="#1e2520">Miniconda3 py314_26.9.4-0 (64-bit) Setup</text><path d="M379 15h10" stroke="#6f746f"/><rect x="420" y="9" width="9" height="9" fill="none" stroke="#969b96"/><path d="m480 10 8 8m0-8-8 8" stroke="#626762"/>
+  <text x="159" y="48" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#25302c">Advanced Installation Options</text><text x="159" y="65" font-family="Arial,sans-serif" font-size="10" fill="#3068a3">Customize how Miniconda3 integrates with Windows</text>
+  <circle cx="22" cy="54" r="12" fill="none" stroke="#44ad38" stroke-width="4"/><path d="M13 58a11 11 0 0 0 19 2M28 47a11 11 0 0 0-15 5" fill="none" stroke="#91ce65" stroke-width="3"/><text x="38" y="60" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#243b44">ANACONDA</text>
+  <line x1="1" y1="84" x2="499" y2="84" stroke="#c8c8c8"/>
+  <g font-family="Arial,sans-serif" font-size="11" fill="#242424">
+    <rect x="24" y="104" width="12" height="12" rx="2" fill="#1674d1"/><path d="m27 110 3 3 5-7" fill="none" stroke="#fff" stroke-width="1.7"/><text x="47" y="114">Create shortcuts (supported packages only).</text>
+    <rect x="24" y="124" width="12" height="12" rx="2" fill="#1674d1"/><path d="m27 130 3 3 5-7" fill="none" stroke="#fff" stroke-width="1.7"/><text x="47" y="134">Add installation to my PATH environment variable</text>
+    <text x="47" y="151" font-size="10" fill="#c3342d">NOT recommended. This can lead to conflicts with other applications.</text><text x="47" y="164" font-size="10" fill="#c3342d">Instead, use the Command Prompt and PowerShell shortcuts added to the Start Menu.</text>
+    <rect x="24" y="178" width="12" height="12" rx="2" fill="#fff" stroke="#858585"/><text x="47" y="188">Register Miniconda3 as my default Python 3.14</text><text x="47" y="202" font-size="9">Allows other programs, such as VS Code and PyCharm, to detect Miniconda.</text>
+    <rect x="24" y="216" width="12" height="12" rx="2" fill="#fff" stroke="#858585"/><text x="47" y="226">Clear the package cache upon completion</text><text x="47" y="241" font-size="9" fill="#747474">Recommended. Recovers some disk space without harming functionality.</text>
+  </g>
+</svg>

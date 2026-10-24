@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 513 347" role="img" aria-labelledby="title desc">
+  <title id="title">Cambiar a la rama DEV en PyCharm</title>
+  <desc id="desc">La rama remota origin/DEV está seleccionada y el menú ofrece Checkout para cambiar a DEV.</desc>
+  <rect width="513" height="347" fill="#f6f7f9"/>
+  <rect x="40" y="3" width="473" height="41" rx="9" fill="#fff" stroke="#e1e4e9"/>
+  <text x="53" y="28" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#202733">Git</text>
+  <rect x="91" y="8" width="112" height="29" rx="6" fill="#f0f1f4" stroke="#d5d9e0"/><text x="100" y="27" font-family="Arial,sans-serif" font-size="14" fill="#333b47">Log: origin/DEV</text>
+  <path d="m221 15v15m-7-8h14" stroke="#8c94a2" stroke-width="1.4"/><path d="m244 18 5 5 5-5" fill="none" stroke="#828a98" stroke-width="1.5"/>
+  <rect x="0" y="0" width="40" height="347" fill="#eceef2"/>
+  <g fill="none" stroke="#7c8593" stroke-width="1.5"><rect x="10" y="281" width="18" height="21" rx="4"/><path d="M14 288h10m-10 5h10m-10 5h6"/><circle cx="19" cy="318" r="8"/><path d="m15 318 3 3 5-6"/><path d="M19 341V328m-4 4 4-4 4 4"/></g>
+  <rect x="40" y="44" width="39" height="303" fill="#fbfcfd"/><path d="M59 59 54 64l5 5m-5-5h13" fill="none" stroke="#8992a0" stroke-width="1.3"/><path d="M58 95h13m-6-6v12" stroke="#8992a0" stroke-width="1.3"/><path d="M56 122l14-14m-14 0 14 14" stroke="#8992a0" stroke-width="1.3"/><path d="M57 147h12m-6-6v12" stroke="#8992a0" stroke-width="1.3"/><path d="m58 177 6 6 6-6" fill="none" stroke="#8992a0" stroke-width="1.3"/>
+  <rect x="92" y="47" width="421" height="300" rx="5" fill="#fff" stroke="#e2e5ea"/>
+  <circle cx="100" cy="96" r="4" fill="#919aa8"/><text x="114" y="101" font-family="Arial,sans-serif" font-size="13" fill="#303844">HEAD (Current Branch)</text>
+  <path d="m96 121 5 5 5-5" fill="none" stroke="#7f8998" stroke-width="1.4"/><text x="111" y="132" font-family="Arial,sans-serif" font-size="13" fill="#303844">Local</text>
+  <path d="M115 151h14l7 8h-21z" fill="#edf0f5" stroke="#8892a0"/><path d="M142 145h10l5 8-5 8h-10l-5-8z" fill="#fff1d6" stroke="#e5a649"/><text x="164" y="159" font-family="Arial,sans-serif" font-size="13" fill="#303844">DEV</text>
+  <path d="M142 170h10l5 8-5 8h-10l-5-8z" fill="#fff1d6" stroke="#e5a649"/><text x="164" y="184" font-family="Arial,sans-serif" font-size="13" fill="#303844">main</text>
+  <path d="m96 193 5 5 5-5" fill="none" stroke="#7f8998" stroke-width="1.4"/><text x="111" y="204" font-family="Arial,sans-serif" font-size="13" fill="#303844">Remote</text>
+  <path d="m115 215 5 5 5-5" fill="none" stroke="#7f8998" stroke-width="1.4"/><path d="M130 213h14l7 8h-21z" fill="#edf0f5" stroke="#8892a0"/><text x="157" y="226" font-family="Arial,sans-serif" font-size="13" fill="#303844">origin</text>
+  <path d="M157 237h10l5 8-5 8h-10l-5-8z" fill="#fff1d6" stroke="#e5a649"/><text x="181" y="250" font-family="Arial,sans-serif" font-size="13" fill="#303844">main</text>
+  <rect x="92" y="253" width="115" height="22" rx="4" fill="#e9ebf0"/><path d="M157 259h10l5 8-5 8h-10l-5-8z" fill="#e9e7fa" stroke="#7263c5"/><text x="181" y="271" font-family="Arial,sans-serif" font-size="13" fill="#303844">DEV</text>
+  <g filter="url(#shadow)"><rect x="208" y="67" width="298" height="276" rx="8" fill="#fff" stroke="#d5d9e0"/></g>
+  <defs><filter id="shadow" x="-20%" y="-20%" width="150%" height="150%"><feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#18202b" flood-opacity=".17"/></filter></defs>
+  <g font-family="Arial,sans-serif" font-size="14" fill="#252d38"><text x="226" y="91">Checkout</text><text x="226" y="119">New Branch from 'origin/DEV'...</text><text x="226" y="146">Checkout and Rebase onto 'DEV'</text><text x="226" y="183">Compare with 'DEV'</text><text x="226" y="211">Show Diff with Working Tree</text><text x="226" y="250">Rebase 'DEV' onto 'origin/DEV'</text><text x="226" y="278">Merge 'origin/DEV' into 'DEV'</text><text x="226" y="316">New Worktree from 'origin/DEV'...</text><text x="226" y="341">Pull into 'DEV' Using Rebase</text></g>
+  <path d="M218 156h278M218 220h278M218 286h278" stroke="#e4e6eb"/>
+  <g font-family="Arial,sans-serif" font-size="11" font-weight="700" text-anchor="middle"><circle cx="292" cy="87" r="11" fill="#5b4bc4" stroke="#fff" stroke-width="2"/><text x="292" y="91" fill="#fff">3</text></g>
+</svg>

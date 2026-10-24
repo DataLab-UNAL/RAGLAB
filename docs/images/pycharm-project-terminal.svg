@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 440" role="img" aria-labelledby="title desc">
+  <title id="title">Abre una terminal desde la carpeta RAGLAB</title>
+  <desc id="desc">Explorador de archivos de Windows dentro de la carpeta del proyecto, con el menú contextual Open in Terminal marcado como paso 2.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#20283a" flood-opacity=".2"/>
+    </filter>
+    <style>
+      .text { font: 19px Arial, sans-serif; fill: #202124; }
+      .small { font: 16px Arial, sans-serif; fill: #5f6368; }
+      .tiny { font: 14px Arial, sans-serif; fill: #777; }
+      .number { font: bold 18px Arial, sans-serif; fill: #fff; text-anchor: middle; dominant-baseline: central; }
+    </style>
+  </defs>
+  <rect width="960" height="440" rx="18" fill="#fff"/>
+  <rect x="1" y="1" width="958" height="438" rx="17" fill="none" stroke="#e4e6e9"/>
+  <rect x="0" y="0" width="960" height="52" rx="18" fill="#f7f8fa"/>
+  <path d="M0 52h960" stroke="#e6e8eb"/>
+  <path d="M25 17h18l8 8v17H25z" fill="#f5f5f5" stroke="#8b929a" stroke-width="1.5"/>
+  <path d="M43 17v8h8" fill="none" stroke="#8b929a" stroke-width="1.5"/>
+  <text x="66" y="37" class="small">RAGLAB</text>
+  <text x="545" y="37" class="tiny">Fecha de modificación</text>
+  <text x="777" y="37" class="tiny">Tipo</text>
+  <path d="M0 53h960" stroke="#e7e9ec"/>
+  <rect x="0" y="54" width="960" height="386" fill="#fff"/>
+  <rect x="0" y="62" width="11" height="23" rx="3" fill="#3178c6"/>
+  <text x="31" y="81" class="text">.gitignore</text>
+  <text x="545" y="81" class="small">23/10/2026 8:27 p. m.</text>
+  <text x="777" y="81" class="small">txtfile</text>
+  <rect x="0" y="102" width="11" height="23" rx="3" fill="#287c65"/>
+  <rect x="2" y="105" width="7" height="7" fill="#fff"/>
+  <text x="31" y="121" class="text">RAGLAB</text>
+  <text x="545" y="121" class="small">23/10/2026 8:31 p. m.</text>
+  <text x="777" y="121" class="small">PyCharm</text>
+  <rect x="0" y="142" width="11" height="23" rx="3" fill="#287c65"/>
+  <rect x="2" y="145" width="7" height="7" fill="#fff"/>
+  <text x="31" y="161" class="text">README</text>
+  <text x="545" y="161" class="small">23/10/2026 8:31 p. m.</text>
+  <text x="777" y="161" class="small">PyCharm</text>
+  <g filter="url(#shadow)">
+    <rect x="235" y="192" width="442" height="230" rx="12" fill="#fff" stroke="#e1e3e6"/>
+  </g>
+  <g fill="none" stroke="#72777f" stroke-width="1.5">
+    <circle cx="270" cy="222" r="5"/><circle cx="282" cy="222" r="5"/><circle cx="270" cy="234" r="5"/><circle cx="282" cy="234" r="5"/>
+    <path d="M260 260h18m-7-7 7 7-7 7"/><path d="M260 291h18m-18 6h18m-18 6h18"/>
+    <circle cx="269" cy="333" r="10"/><path d="M269 327v12m-6-6h12"/>
+    <path d="m261 365 15-15m-15 0 15 15"/>
+    <path d="M260 406h18v12h-18zM261 407l6 5 5-4"/>
+  </g>
+  <text x="305" y="231" class="text">Ver</text><path d="m642 215 7 7-7 7" fill="none" stroke="#747981" stroke-width="1.5"/>
+  <text x="305" y="268" class="text">Ordenar por</text><path d="m642 252 7 7-7 7" fill="none" stroke="#747981" stroke-width="1.5"/>
+  <text x="305" y="305" class="text">Agrupar por</text><path d="m642 289 7 7-7 7" fill="none" stroke="#747981" stroke-width="1.5"/>
+  <path d="M249 318h414" stroke="#e5e6e8"/>
+  <text x="305" y="341" class="text">Nuevo</text><path d="m642 326 7 7-7 7" fill="none" stroke="#747981" stroke-width="1.5"/>
+  <text x="305" y="378" class="text">Propiedades</text><text x="590" y="378" class="small">Alt+Intro</text>
+  <path d="M249 391h414" stroke="#e5e6e8"/>
+  <rect x="246" y="396" width="421" height="40" rx="6" fill="#f3f4f6"/>
+  <path d="M260 409h16v12h-16zM261 410l6 5 5-4" fill="#45494f" stroke="#45494f" stroke-width="1"/>
+  <text x="305" y="423" class="text" font-weight="bold">Open in Terminal</text>
+  <circle cx="108" cy="220" r="17" fill="#6b55c9" stroke="#fff" stroke-width="3"/><text x="108" y="220" class="number">4</text>
+  <circle cx="248" cy="416" r="17" fill="#6b55c9" stroke="#fff" stroke-width="3"/><text x="248" y="416" class="number">5</text>
+</svg>

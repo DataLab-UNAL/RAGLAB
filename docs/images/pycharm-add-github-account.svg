@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 874 467" role="img" aria-labelledby="title desc">
+  <title id="title">Agregar una cuenta de GitHub en PyCharm</title>
+  <desc id="desc">La configuración Version Control, GitHub está abierta en PyCharm y el menú ofrece iniciar sesión con GitHub.</desc>
+  <defs><filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#202631" flood-opacity=".2"/></filter></defs>
+  <rect width="874" height="467" fill="#f7f8fa"/>
+  <rect width="874" height="39" fill="#fff"/><rect x="3" y="12" width="15" height="15" rx="3" fill="#19a66b"/><text x="5" y="23" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#15202a">PC</text><text x="29" y="25" font-family="Arial,sans-serif" font-size="14" fill="#262d38">Settings – WelcomeScreen</text><text x="851" y="24" font-family="Arial,sans-serif" font-size="20" fill="#9299a4">×</text>
+  <rect x="0" y="39" width="246" height="428" fill="#fbfbfc"/><rect x="0" y="49" width="238" height="29" rx="5" fill="#fff" stroke="#d8dce2"/><circle cx="13" cy="63" r="5" fill="none" stroke="#87909c"/><path d="m17 67 4 4" stroke="#87909c"/>
+  <g font-family="Arial,sans-serif" font-size="14" fill="#18202b"><text x="24" y="99" font-weight="700">Appearance &amp; Behavior</text><text x="40" y="130">Quick Lists</text><text x="40" y="156">Required Plugins</text><text x="40" y="182">Trusted Locations</text><text x="40" y="208">Path Variables</text><text x="40" y="234">Presentation Assistant</text><text x="24" y="260" font-weight="700">Keymap</text><text x="24" y="287" font-weight="700">Editor</text><text x="24" y="314" font-weight="700">Plugins</text><text x="24" y="341" font-weight="700">Memory Usage</text><text x="24" y="368" font-weight="700">Version Control</text><text x="40" y="394">Changelists</text><text x="40" y="420">Commit</text><text x="40" y="446">Confirmation</text><text x="40" y="464">Directory Mappings</text></g>
+  <rect x="0" y="353" width="246" height="25" fill="#ebecf1"/><path d="m9 356 6 6-6 6" fill="none" stroke="#89919f"/>
+  <line x1="246" y1="39" x2="246" y2="467" stroke="#e0e3e8"/>
+  <text x="263" y="67" font-family="Arial,sans-serif" font-size="14" fill="#232a34">Version Control　›　GitHub</text><text x="795" y="68" font-family="Arial,sans-serif" font-size="19" fill="#7d8796">←　→　⌖</text>
+  <line x1="263" y1="91" x2="856" y2="91" stroke="#e2e5ea"/><text x="269" y="111" font-family="Arial,sans-serif" font-size="22" fill="#7e8795">＋</text><text x="297" y="111" font-family="Arial,sans-serif" font-size="22" fill="#c1c5cc">−</text><text x="322" y="111" font-family="Arial,sans-serif" font-size="20" fill="#adb4bf">✓</text><line x1="263" y1="119" x2="856" y2="119" stroke="#e6e8ec"/>
+  <text x="499" y="244" font-family="Arial,sans-serif" font-size="14" fill="#828b99">No accounts added</text><text x="471" y="268" font-family="Arial,sans-serif" font-size="14" fill="#386ddb">Add account... (Alt+Insertar)</text>
+  <g filter="url(#shadow)"><rect x="505" y="268" width="213" height="95" rx="9" fill="#fff" stroke="#d9dce2"/></g>
+  <rect x="512" y="277" width="199" height="22" rx="4" fill="#d7e3ff"/><text x="520" y="293" font-family="Arial,sans-serif" font-size="14" fill="#202733">Log In via GitHub...</text><text x="520" y="318" font-family="Arial,sans-serif" font-size="14" fill="#202733">Log In with Token...</text><line x1="514" y1="328" x2="709" y2="328" stroke="#e5e7eb"/><text x="520" y="350" font-family="Arial,sans-serif" font-size="14" fill="#202733">Log In to GitHub Enterprise...</text>
+  <g font-family="Arial,sans-serif" font-size="12" font-weight="700" text-anchor="middle">
+    <circle cx="292" cy="104" r="12" fill="#5b4bc4" stroke="#fff" stroke-width="2"/><text x="292" y="108" fill="#fff">5</text>
+    <circle cx="671" cy="288" r="12" fill="#5b4bc4" stroke="#fff" stroke-width="2"/><text x="671" y="292" fill="#fff">6</text>
+  </g>
+</svg>
