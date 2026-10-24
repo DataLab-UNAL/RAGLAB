@@ -1,20 +1,34 @@
-# Diseño de agentes de I.A. RAG-LAB: La nueva generación de Chatbots Inteligentes
+# RAG-LAB | Fundamentos para crear chatbots inteligentes
 
-Este repositorio incluye una primera versión del **Módulo 1** orientado a estudiantes sin base previa en Python o programación.
+Repositorio de materiales del curso **Diseño de agentes de I.A. RAG-LAB**. Actualmente incluye la guía de bienvenida y los recursos del primer módulo, que prepara a los estudiantes para trabajar con Python y avanzar hacia un prototipo de chatbot basado en RAG.
 
-## Estructura
+## Contenido del repositorio
 
-- `RAGLAB.yml`: entorno oficial del curso basado en Conda.
-- `docs/index.html`: bienvenida interactiva y portada del curso.
-- `docs/modulo-01.html`: contenidos y ruta de aprendizaje del modulo 1, listos para publicarse con GitHub Pages.
-- `modulo-01/`: materiales y ejercicios introductorios.
+- [`docs/index.html`](docs/index.html): bienvenida, objetivos y recorrido general del curso.
+- [`docs/modulo-01.html`](docs/modulo-01.html): guía interactiva del módulo 1, con instrucciones, capturas y soporte.
+- [`modulo-01/README.md`](modulo-01/README.md): objetivos, secuencia de trabajo y ejercicios del módulo.
+- [`modulo-01/ejercicios/`](modulo-01/ejercicios/): scripts de práctica de Python.
+- [`RAGLAB.yml`](RAGLAB.yml): definición del entorno de Conda para el curso.
 
-## Enfoque del módulo 1
+## Módulo 1: fundamentos técnicos
 
-El flujo principal de este módulo está basado en:
+El módulo introduce las herramientas y prácticas que se utilizarán durante el curso:
 
-- Miniconda para gestionar el entorno del curso.
-- Git y GitHub para control de versiones.
-- Fork del repositorio para trabajo individual de cada estudiante.
-- PyCharm como entorno de desarrollo.
-- Kiro CLI conectado a PyCharm mediante ACP para practicar programación asistida por agentes, con revisión y validación de cada cambio.
+- Python y ejecución de scripts desde PyCharm o la terminal.
+- Git y GitHub para registrar y compartir cambios.
+- Fork y clonación del repositorio para el trabajo individual.
+- Miniconda y el entorno `RAGLAB` para instalar dependencias.
+- Kiro CLI y el plugin **Kiro with GUI** para PyCharm, con revisión y validación de los cambios propuestos.
+
+Consulta la [guía del módulo](docs/modulo-01.html) para seguir la ruta paso a paso.
+
+## Preparación del entorno
+
+Desde la carpeta raíz del repositorio, crea y activa el entorno:
+
+```bash
+conda env create -f RAGLAB.yml
+conda activate RAGLAB
+```
+
+Los ejercicios y las instrucciones completas están en [`modulo-01/README.md`](modulo-01/README.md) y en la guía interactiva.

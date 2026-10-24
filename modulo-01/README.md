@@ -1,71 +1,84 @@
-# Módulo 1 - Fundamentos Técnicos
+# Módulo 1 | Fundamentos técnicos
 
-Este módulo prepara a los estudiantes para el resto del curso y está pensado para dos sesiones de 4 horas.
+Este módulo prepara al grupo para el resto del curso mediante una introducción práctica a Git, GitHub, Miniconda, PyCharm y Python. La duración sugerida es de **dos sesiones de cuatro horas**.
 
-## Objetivo
+## Resultados de aprendizaje
 
-Al finalizar, el estudiante debe poder:
+Al finalizar el módulo, cada estudiante podrá:
 
-- Instalar Miniconda, Git y PyCharm.
-- Crear y usar una cuenta de GitHub.
-- Hacer un fork del repositorio del curso.
-- Clonar su fork y subir cambios.
-- Crear el entorno `RAGLAB` desde `RAGLAB.yml`.
-- Ejecutar scripts simples en Python.
-- Describir un cambio pequeño a un agente de programación y revisar el código que propone.
-- Ejecutar el código modificado y validar que cumple el requerimiento antes de guardarlo con Git.
+- Crear una cuenta de GitHub, configurar Git y crear un fork del repositorio del curso.
+- Clonar su fork y trabajar con la rama `DEV` desde PyCharm.
+- Crear y activar el entorno Conda `RAGLAB` definido en `RAGLAB.yml`.
+- Ejecutar y modificar scripts introductorios de Python.
+- Plantear un cambio acotado a Kiro, revisar el código propuesto y validar su comportamiento.
+- Crear un commit y subir a GitHub un cambio que comprenda y haya comprobado.
 
-## Estructura
+## Ejercicios
 
-- `ejercicios/01_hola_python.py`: primer script.
-- `ejercicios/02_variables_y_tipos.py`: variables y tipos básicos.
-- `ejercicios/03_condicionales_y_bucles.py`: decisiones y repeticiones.
-- `ejercicios/04_funciones.py`: funciones simples.
+| Archivo | Tema |
+| --- | --- |
+| `ejercicios/01_hola_python.py` | Primer programa en Python |
+| `ejercicios/02_variables_y_tipos.py` | Variables y tipos de datos |
+| `ejercicios/03_condicionales_y_bucles.py` | Condiciones y repeticiones |
+| `ejercicios/04_funciones.py` | Funciones y parámetros |
 
-## Flujo principal del curso
+## Preparar y activar el entorno
+
+Ejecuta estos comandos desde la carpeta raíz del repositorio:
 
 ```bash
-conda env create -f ../RAGLAB.yml
+conda env create -f RAGLAB.yml
 conda activate RAGLAB
 ```
 
-Luego:
+En Windows, abre **Anaconda Prompt** para usar Conda. Para comprobar el entorno y practicar Python, ejecuta los ejercicios desde la raíz:
 
 ```bash
-python ejercicios/01_hola_python.py
-python ejercicios/02_variables_y_tipos.py
-python ejercicios/03_condicionales_y_bucles.py
-python ejercicios/04_funciones.py
+python modulo-01/ejercicios/01_hola_python.py
+python modulo-01/ejercicios/02_variables_y_tipos.py
+python modulo-01/ejercicios/03_condicionales_y_bucles.py
+python modulo-01/ejercicios/04_funciones.py
 ```
 
-## Contenidos sugeridos por sesión
+También puedes abrir y ejecutar cada archivo desde PyCharm. Selecciona `RAGLAB` como intérprete del proyecto.
 
-### Sesión 1
+## Secuencia sugerida
 
-- Instalación de Miniconda, Git y PyCharm.
-- Creación de cuenta en GitHub.
-- Explicación del concepto de fork.
-- Clonado del repositorio.
-- Primer commit y primer push.
+### Sesión 1 | Configuración y primeros ejercicios
 
-### Sesión 2
+- Presentación del curso y de las herramientas.
+- Creación de la cuenta de GitHub y configuración de Git.
+- Creación del fork y clonación del repositorio en PyCharm.
+- Instalación de Miniconda, creación del entorno `RAGLAB` y selección del intérprete.
+- Ejecución guiada de los ejercicios de Python.
 
-- Creación del entorno `RAGLAB`.
-- Activación del entorno y validación.
-- Apertura del proyecto en PyCharm.
-- Python básico.
-- Práctica integradora con cambios versionados.
-- Introducción a Kiro CLI conectado a PyCharm mediante ACP. Presentar el flujo al inicio del bloque de programación si el entorno ya está listo; si la instalación se extiende, hacer la práctica guiada después de la práctica integradora.
-- Práctica con un requerimiento pequeño: pedir un plan, revisar el diff, ejecutar el script, validar los resultados y guardar el cambio con Git.
+### Sesión 2 | Programación y cambios versionados
 
-## Programación asistida por agentes
+- Repaso de variables, condiciones, ciclos y funciones.
+- Práctica de una mejora pequeña con Kiro CLI y Kiro with GUI.
+- Revisión del plan y del diff; ejecución del programa y validación de los resultados.
+- Creación de un commit y Push a la rama `DEV` del fork personal.
 
-Kiro se usa como apoyo para convertir un requerimiento concreto en cambios de código. No reemplaza los fundamentos de Python: cada estudiante debe poder ejecutar el script, reconocer qué cambió y comprobar que el resultado coincide con lo esperado.
+## Instalar y configurar Kiro
 
-1. Instalar Kiro CLI desde la [guía oficial](https://kiro.dev/docs/getting-started/installation/) e iniciar sesión con `kiro-cli login`.
-2. En PyCharm, habilitar AI Assistant y agregar Kiro como agente ACP siguiendo la [guía de Kiro para JetBrains](https://kiro.dev/docs/cli/acp/).
-3. Pedir un plan antes de permitir cambios; revisar el archivo y el diff.
-4. Ejecutar el programa desde PyCharm, validar los casos esperados y volver a iterar si hace falta.
-5. Revisar `git diff` y guardar con un commit solo cuando se entienda el cambio.
+Kiro apoya el trabajo de programación, pero no sustituye la comprensión del código. Cada estudiante revisa los cambios y verifica que cumplan el requerimiento antes de guardarlos.
 
-Kiro ofrece modelos de varios proveedores, sujetos al catálogo y plan vigentes. Al preparar esta guía, el nivel gratuito muestra 50 créditos; las suscripciones de ChatGPT o Claude no cubren el consumo de Kiro. Consultar [modelos](https://kiro.dev/docs/models/available-models/) y [precios](https://kiro.dev/pricing/) antes de la clase.
+1. Instala **Kiro CLI** siguiendo la [guía oficial](https://kiro.dev/docs/getting-started/installation/) y completa el inicio de sesión:
+
+   ```bash
+   kiro-cli --version
+   kiro-cli login
+   kiro-cli doctor
+   ```
+
+2. En PyCharm 2025.1 o posterior, abre **File → Settings → Plugins → Marketplace**, busca e instala [**Kiro with GUI**](https://plugins.jetbrains.com/plugin/30960-kiro-with-gui). Acepta el aviso de plugin de terceros si aparece y reinicia PyCharm cuando se solicite.
+3. Abre Kiro desde el icono que aparece en la barra lateral del IDE.
+4. En **Manage → Settings**, confirma que la ruta de Kiro CLI esté configurada. En **Manage → Auth**, verifica que la sesión esté activa. Si PyCharm no detecta `kiro-cli`, indica su ruta completa.
+5. En la práctica, pide primero un plan, revisa el diff, ejecuta el script y valida los resultados esperados. Si hace falta, ajusta el requerimiento y repite la comprobación.
+6. Cuando comprendas el cambio, revisa `git diff`, crea un commit y súbelo a tu fork desde la rama `DEV` con `git push origin DEV`.
+
+La disponibilidad de modelos, créditos y funciones depende del plan vigente. Consulta la [lista de modelos](https://kiro.dev/docs/models/available-models/) y los [precios de Kiro](https://kiro.dev/pricing/) antes de la sesión.
+
+## Guía paso a paso
+
+La [guía interactiva del módulo 1](../docs/modulo-01.html) incluye instrucciones visuales para configurar GitHub, Miniconda, PyCharm y Kiro, además de recomendaciones para resolver problemas comunes.

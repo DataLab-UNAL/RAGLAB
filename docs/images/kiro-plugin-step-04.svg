@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="430" viewBox="0 0 760 430" role="img" aria-labelledby="title desc">
+  <title id="title">Abrir Kiro with GUI desde PyCharm</title>
+  <desc id="desc">PyCharm muestra el icono morado de Kiro en la barra de herramientas lateral derecha.</desc>
+  <rect width="760" height="430" rx="18" fill="#f3f4f7"/>
+  <rect x="18" y="18" width="724" height="394" rx="15" fill="#252831"/>
+  <rect x="18" y="18" width="724" height="42" rx="15" fill="#343844"/>
+  <rect x="18" y="43" width="724" height="17" fill="#343844"/>
+  <circle cx="40" cy="39" r="6" fill="#f36d61"/><circle cx="60" cy="39" r="6" fill="#efbb50"/><circle cx="80" cy="39" r="6" fill="#63c65c"/>
+  <text x="111" y="45" font-family="Arial, sans-serif" font-size="15" fill="#e3e6ed">RAGLAB — PyCharm</text>
+  <rect x="18" y="60" width="52" height="352" fill="#30343e"/>
+  <rect x="690" y="60" width="52" height="352" fill="#30343e"/>
+  <rect x="82" y="82" width="177" height="296" rx="9" fill="#2e323c" stroke="#414651"/>
+  <text x="102" y="111" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#c4cad5">Project</text>
+  <text x="101" y="150" font-family="Arial, sans-serif" font-size="13" fill="#d4d8e0">▾ RAGLAB</text>
+  <text x="118" y="180" font-family="Arial, sans-serif" font-size="13" fill="#bfc5cf">▸ docs</text>
+  <text x="118" y="209" font-family="Arial, sans-serif" font-size="13" fill="#bfc5cf">▸ modulo-01</text>
+  <rect x="270" y="82" width="390" height="296" rx="9" fill="#1f2229" stroke="#414651"/>
+  <text x="294" y="123" font-family="monospace" font-size="15" fill="#b5c6ff">def calcular_progreso(completados, total):</text>
+  <text x="317" y="155" font-family="monospace" font-size="15" fill="#d7dae0">if total == 0:</text>
+  <text x="339" y="187" font-family="monospace" font-size="15" fill="#d7dae0">return 0</text>
+  <rect x="697" y="169" width="38" height="43" rx="9" fill="#8b45ed"/>
+  <path d="M716 177c-7 0-12 5-12 13v11h6v-10c0-5 2-8 6-8s6 3 6 8v10h6v-11c0-8-5-13-12-13z" fill="#fff"/>
+  <path d="M681 188h-11" stroke="#bb9aff" stroke-width="3"/>
+  <rect x="421" y="301" width="264" height="75" rx="13" fill="#fff"/>
+  <text x="440" y="330" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#252a34">Kiro aparece en la barra lateral</text>
+  <text x="440" y="353" font-family="Arial, sans-serif" font-size="13" fill="#646b77">Haz clic en el icono morado para abrirlo.</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="430" viewBox="0 0 760 430" role="img" aria-labelledby="title desc">
+  <title id="title">Aceptar la instalación del plugin de terceros</title>
+  <desc id="desc">Aviso de plugins de terceros para Kiro with GUI; el botón Accept está resaltado.</desc>
+  <rect width="760" height="430" rx="18" fill="#e9ebef"/>
+  <rect x="95" y="53" width="570" height="324" rx="16" fill="#fff" stroke="#cfd3dc" stroke-width="2"/>
+  <path d="M134 115l24-42 24 42z" fill="#ffb51b"/>
+  <text x="152" y="106" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#fff">!</text>
+  <text x="200" y="92" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#242832">Third-Party Plugins Notice</text>
+  <text x="135" y="151" font-family="Arial, sans-serif" font-size="15" fill="#333943">The following plugin isn't coming from JetBrains:</text>
+  <rect x="135" y="171" width="486" height="49" rx="8" fill="#f6f7f9"/>
+  <text x="155" y="201" font-family="Arial, sans-serif" font-size="15" fill="#303640">Kiro with GUI (elsboo)</text>
+  <text x="135" y="250" font-family="Arial, sans-serif" font-size="14" fill="#5e6570">Only continue if you trust the plugin source.</text>
+  <rect x="444" y="293" width="120" height="43" rx="9" fill="#3478f6"/>
+  <rect x="440" y="289" width="128" height="51" rx="12" fill="none" stroke="#9fc0ff" stroke-width="3"/>
+  <text x="504" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#fff">Accept</text>
+  <rect x="575" y="293" width="73" height="43" rx="9" fill="#fff" stroke="#bfc5d0" stroke-width="2"/>
+  <text x="611" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#343942">Cancel</text>
+  <text x="102" y="410" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#565d69">PASO 3 · Confirma la instalación del plugin.</text>
+</svg>

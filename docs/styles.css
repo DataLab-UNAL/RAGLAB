@@ -3459,8 +3459,10 @@ pre {
   }
 
   .sidebar {
-    top: 0;
-    max-height: 42vh;
+    position: static;
+    top: auto;
+    max-height: none;
+    overflow: visible;
     padding: 18px;
     border-radius: 22px;
   }
@@ -3837,8 +3839,7 @@ pre {
 }
 
 .kiro-intro-label,
-.kiro-section-heading > span,
-.kiro-code-label {
+.kiro-section-heading > span {
   color: var(--kiro-accent);
   font-size: 0.72rem;
   font-weight: 800;
@@ -3905,7 +3906,6 @@ pre {
   font-size: 1.15rem;
 }
 
-.kiro-acp-note,
 .kiro-model-note,
 .kiro-responsibility {
   display: flex;
@@ -3920,7 +3920,6 @@ pre {
   line-height: 1.6;
 }
 
-.kiro-acp-note strong,
 .kiro-model-note strong,
 .kiro-responsibility strong {
   color: var(--ink);
@@ -4020,6 +4019,10 @@ pre {
   align-items: stretch;
 }
 
+.kiro-config-timeline .kiro-stage-card {
+  grid-column: 1 / -1;
+}
+
 .kiro-stage-card {
   border-top: 3px solid #77ad96 !important;
   background: linear-gradient(155deg, #f2f8f4, rgba(255, 255, 255, 0.94) 55%) !important;
@@ -4047,18 +4050,57 @@ pre {
   font-size: 0.9rem;
 }
 
-.kiro-config-block,
+.kiro-install-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 20px 0 26px;
+}
+
+.kiro-install-card {
+  min-width: 0;
+  margin: 0;
+  padding: 14px;
+  border-radius: 18px;
+}
+
+.kiro-install-card-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 12px;
+}
+
+.kiro-install-card-heading span {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  border-radius: 10px;
+  background: #f0e9ff;
+  color: #6745b6;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.kiro-install-card-heading strong {
+  font-size: 0.93rem;
+}
+
+.kiro-install-card img {
+  width: 100%;
+  border: 1px solid var(--line);
+}
+
+.kiro-install-card figcaption {
+  margin-top: 10px;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
 .kiro-prompt-block {
   padding: 22px 24px;
-}
-
-.kiro-config-block .command-head h4 {
-  margin: 4px 0 0;
-}
-
-.kiro-path-note {
-  border-color: #d9e8e0;
-  background: #f5f8f5;
 }
 
 .kiro-validation-steps {
@@ -4117,6 +4159,92 @@ pre {
   margin-top: 14px;
 }
 
+.support-intro {
+  max-width: 760px;
+  margin: -4px 0 20px;
+  color: var(--muted);
+}
+
+.support-grid {
+  align-items: stretch;
+}
+
+.support-grid article {
+  min-width: 0;
+}
+
+.support-grid .timeline-label {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: var(--muted);
+}
+
+.support-grid h4 {
+  margin: 0 0 10px;
+}
+
+.support-grid p {
+  margin: 0;
+  line-height: 1.65;
+}
+
+.support-howto {
+  border-color: #cfe4d8 !important;
+  background: #edf7f2 !important;
+}
+
+.closing-checklist {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.closing-checklist li {
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+  padding: 15px 17px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.64);
+}
+
+.closing-checklist li > span {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border-radius: 11px;
+  background: #edf0f6;
+  color: var(--ink);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.closing-checklist strong {
+  display: block;
+  margin: 1px 0 3px;
+}
+
+.closing-checklist p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.closing-note {
+  margin-top: 16px;
+  padding: 15px 18px;
+  border-left: 3px solid #77ad96;
+  border-radius: 0 12px 12px 0;
+  background: #edf7f2;
+  line-height: 1.6;
+}
+
 @media (max-width: 1100px) {
   .kiro-intro {
     grid-template-columns: 1fr;
@@ -4164,8 +4292,11 @@ pre {
     grid-template-columns: 1fr;
   }
 
-  .kiro-config-block,
   .kiro-prompt-block {
     padding: 16px;
+  }
+
+  .kiro-install-gallery {
+    grid-template-columns: 1fr;
   }
 }

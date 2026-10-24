@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="430" viewBox="0 0 760 430" role="img" aria-labelledby="title desc">
+  <title id="title">Abrir Plugins en PyCharm</title>
+  <desc id="desc">El menú File de PyCharm está abierto y la opción Plugins está resaltada.</desc>
+  <rect width="760" height="430" rx="18" fill="#f4f5f7"/>
+  <rect width="760" height="44" rx="18" fill="#e8e8eb"/>
+  <rect y="26" width="760" height="18" fill="#e8e8eb"/>
+  <circle cx="22" cy="22" r="6" fill="#ef6a5b"/><circle cx="42" cy="22" r="6" fill="#f5bd4f"/><circle cx="62" cy="22" r="6" fill="#61c454"/>
+  <rect x="105" y="7" width="44" height="30" rx="7" fill="#d9d5c2"/>
+  <g font-family="Arial, sans-serif" font-size="17" fill="#25272b">
+    <text x="114" y="28">File</text><text x="165" y="28">Edit</text><text x="222" y="28">View</text><text x="285" y="28">Navigate</text><text x="386" y="28">Code</text><text x="440" y="28">Refactor</text><text x="530" y="28">Run</text>
+  </g>
+  <rect x="22" y="53" width="500" height="351" rx="13" fill="#fff" stroke="#d5d8df" stroke-width="2"/>
+  <g font-family="Arial, sans-serif" font-size="16" fill="#22252a">
+    <text x="62" y="91">New Project...</text><text x="62" y="128">Project from Version Control...</text><text x="62" y="165">New File or Directory...</text><text x="62" y="202">Open...</text><text x="62" y="239">Save As...</text><text x="62" y="276">Recent Projects</text><text x="62" y="313">Close Project</text><text x="62" y="350">Rename Project...</text>
+  </g>
+  <path d="M22 365H522" stroke="#e4e5e8" stroke-width="2"/>
+  <rect x="34" y="370" width="476" height="29" rx="6" fill="#cddcff"/>
+  <circle cx="48" cy="384" r="7" fill="none" stroke="#667080" stroke-width="2"/>
+  <path d="M53 389l5 5" stroke="#667080" stroke-width="2"/>
+  <text x="70" y="390" font-family="Arial, sans-serif" font-size="16" fill="#22252a">Plugins</text>
+  <rect x="551" y="120" width="177" height="159" rx="14" fill="#252a35"/>
+  <text x="572" y="158" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#aab5c7">PASO 1</text>
+  <text x="572" y="191" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#fff">Abre Plugins</text>
+  <text x="572" y="222" font-family="Arial, sans-serif" font-size="14" fill="#d1d6df">File → Settings</text>
+  <text x="572" y="245" font-family="Arial, sans-serif" font-size="14" fill="#d1d6df">→ Plugins</text>
+</svg>

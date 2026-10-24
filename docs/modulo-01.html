@@ -8,6 +8,7 @@
       name="description"
       content="Módulo 1 del curso RAG-LAB: GitHub, Miniconda, PyCharm, Python básico y programación asistida por agentes."
     />
+    <link rel="icon" href="data:," />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -57,8 +58,8 @@
           </div>
           <div class="nav-group" role="group" aria-label="Cierre y consulta">
             <p class="nav-group-title">Cierre y consulta</p>
-            <a href="#errores" role="tab" aria-selected="false" aria-controls="errores" tabindex="-1">Errores comunes</a>
-            <a href="#checklist" role="tab" aria-selected="false" aria-controls="checklist" tabindex="-1">Checklist final</a>
+            <a href="#errores" role="tab" aria-selected="false" aria-controls="errores" tabindex="-1">Ayuda con problemas</a>
+            <a href="#checklist" role="tab" aria-selected="false" aria-controls="checklist" tabindex="-1">Checklist de cierre</a>
           </div>
           </nav>
         </details>
@@ -320,7 +321,7 @@
             </div>
             <div class="git-command-item" data-copy-scope>
               <span class="git-command-number">04</span>
-              <div class="git-command-copy"><strong>Define el nombre de la rama principal</strong><p>El curso usará <code>main</code> como nombre inicial.</p><pre><code>git config --global init.defaultBranch main</code></pre></div>
+              <div class="git-command-copy"><strong>Define la rama inicial para repositorios nuevos</strong><p>Este ajuste solo aplica a repositorios que crees desde cero. En el proyecto del curso trabajarás en la rama <code>DEV</code>.</p><pre><code>git config --global init.defaultBranch main</code></pre></div>
               <button class="copy-button" data-copy>Copiar</button>
             </div>
             <div class="git-command-validation">
@@ -347,7 +348,7 @@
             <div><span class="git-diagram-dot git-diagram-dot--merge"></span><p><strong>Cada círculo</strong> representa un commit: un punto guardado en el historial.</p></div>
             <div><span class="git-diagram-tag">v1.0</span><p><strong>Las etiquetas</strong> marcan versiones listas para identificar o compartir.</p></div>
           </div>
-          <p class="git-diagram-context">El dibujo presenta un flujo con varias ramas. En este curso empezaremos con una estructura más sencilla: tu fork y la rama principal <code>main</code>.</p>
+          <p class="git-diagram-context">El dibujo presenta un ejemplo general con varias ramas. En este curso trabajarás sobre tu fork y usarás la rama <code>DEV</code>.</p>
           <a class="git-diagram-source" href="https://noetzold.tech/wp-content/uploads/2022/12/pasted-image-0.png" target="_blank" rel="noreferrer">Ver imagen original en noetzold.tech ↗</a>
         </dialog>
 
@@ -601,7 +602,7 @@
                 </div>
                 <div class="command-block pycharm-environment-block">
                   <div class="command-head">
-                    <div><span class="command-eyebrow">Paso 6 · En la terminal del proyecto</span><h4>Crea y valida el entorno</h4></div>
+                    <div><span class="command-eyebrow">Terminal del proyecto</span><h4>Crea y valida el entorno</h4></div>
                     <button class="copy-button" data-copy>Copiar</button>
                   </div>
                   <pre><code>conda env create -f RAGLAB.yml
@@ -784,7 +785,7 @@ pip list</code></pre>
           <div class="kiro-intro">
             <div class="kiro-intro-copy">
               <span class="kiro-intro-label">&iquest;Qu&eacute; es Kiro?</span>
-              <p><strong>Kiro es un agente de programaci&oacute;n con inteligencia artificial.</strong> Puede leer el contexto del proyecto, explicar c&oacute;digo, proponer y editar archivos, y ejecutar comandos. Lo conectaremos a PyCharm para pedirle una mejora desde el chat, como si trabajaras con un asistente que conoce los archivos abiertos.</p>
+              <p><strong>Kiro es un agente de programaci&oacute;n con inteligencia artificial.</strong> Puede leer el contexto del proyecto, explicar c&oacute;digo, proponer y editar archivos, y ejecutar comandos. Usaremos Kiro CLI junto con el plugin Kiro with GUI para trabajar desde un panel dentro de PyCharm.</p>
               <p>En este ejercicio te ayudar&aacute; a convertir una necesidad en un cambio peque&ntilde;o y comprobable. T&uacute; decides qu&eacute; pedir, revisas el plan y el diff, y ejecutas el programa para validar el resultado.</p>
             </div>
             <div class="kiro-flow" aria-label="Flujo de trabajo con Kiro">
@@ -795,72 +796,76 @@ pip list</code></pre>
               <div><span>03</span><strong>Comprueba</strong><small>Ejecuta y valida</small></div>
             </div>
           </div>
-          <p class="kiro-acp-note"><strong>&iquest;C&oacute;mo llega a PyCharm?</strong> Kiro CLI se conecta mediante <strong>Agent Client Protocol (ACP)</strong>, un protocolo que permite usar agentes externos desde el chat de AI Assistant.</p>
-
           <div class="kiro-prerequisites">
-            <div class="kiro-section-heading"><span>Antes de conectarlo</span><h4>Prepara estas herramientas</h4></div>
+            <div class="kiro-section-heading"><span>Antes de empezar</span><h4>Prepara Kiro CLI y PyCharm</h4></div>
             <div class="kiro-prerequisite-grid">
               <article class="kiro-info-card">
                 <span class="kiro-info-icon" aria-hidden="true">IDE</span>
-                <div><h5>PyCharm y AI Assistant</h5><p>Usa PyCharm 2025.3.2 o posterior. Si AI Chat muestra el bot&oacute;n <strong>Install Plugin</strong>, instala primero AI Assistant y reinicia PyCharm si te lo pide. Para usar un agente ACP no necesitas una suscripci&oacute;n de JetBrains AI.</p></div>
+                <div><h5>PyCharm</h5><p>Usa PyCharm 2025.1 o posterior. La interfaz de Kiro se instala como un plugin desde el Marketplace de JetBrains.</p></div>
               </article>
               <article class="kiro-info-card">
                 <span class="kiro-info-icon" aria-hidden="true">CLI</span>
-                <div><h5>Kiro CLI instalado</h5><p>Instala Kiro CLI, no Kiro IDE. En Windows necesitas Windows 11 y PowerShell; en la p&aacute;gina oficial, selecciona la pesta&ntilde;a CLI y el instalador de Windows.</p></div>
+                <div><h5>Kiro CLI instalado</h5><p>Instala Kiro CLI, no Kiro IDE. En Windows necesitas Windows 11 y PowerShell; al terminar, inicia sesi&oacute;n con tu cuenta de Kiro.</p></div>
               </article>
               <article class="kiro-info-card">
                 <span class="kiro-info-icon" aria-hidden="true">ID</span>
-                <div><h5>Cuenta de Kiro</h5><p>Inicia sesi&oacute;n y revisa las condiciones y los l&iacute;mites de uso vigentes en tu plan.</p></div>
+                <div><h5>Cuenta de Kiro</h5><p>Ten a mano la cuenta con la que vas a autenticar el CLI. Los modelos y l&iacute;mites disponibles dependen del plan.</p></div>
               </article>
             </div>
           </div>
 
           <div class="kiro-model-note"><span aria-hidden="true">i</span><p><strong>Modelo recomendado:</strong> empieza con la opci&oacute;n <strong>Auto</strong> de Kiro. Los modelos disponibles y el consumo dependen del plan y pueden cambiar.</p></div>
 
-          <div class="kiro-setup-heading"><span class="kiro-intro-label">Configuraci&oacute;n</span><h4>Conecta Kiro CLI con el chat de PyCharm</h4><p>Hazlo una sola vez; despu&eacute;s podr&aacute;s elegir Kiro Agent desde AI Chat.</p></div>
+          <div class="kiro-setup-heading"><span class="kiro-intro-label">Instalaci&oacute;n y configuraci&oacute;n</span><h4>Prepara el CLI y agrega Kiro with GUI a PyCharm</h4><p>Sigue este orden: instala y autentica Kiro CLI, instala el plugin y comprueba que el panel de Kiro aparezca en el IDE.</p></div>
           <div class="timeline kiro-timeline">
             <article class="kiro-stage-card">
               <header><span class="kiro-stage-number">01</span><div><span class="timeline-label">Preparaci&oacute;n</span><h4>Instala y autentica Kiro CLI</h4></div></header>
               <ol class="steps">
                 <li>Abre la <a href="https://kiro.dev/docs/getting-started/installation/" target="_blank" rel="noreferrer">p&aacute;gina oficial de instalaci&oacute;n</a>, cambia de la pesta&ntilde;a <strong>IDE</strong> a <strong>CLI</strong> y descarga Kiro CLI para tu sistema. No instales Kiro IDE.</li>
-                <li>En Windows, instala la versi&oacute;n para Windows 11 y usa PowerShell. Al terminar, abre una ventana nueva y ejecuta <code>kiro-cli --version</code>.</li>
-                <li>Ejecuta <code>kiro-cli login</code> y completa la autenticaci&oacute;n en el navegador si te la solicita.</li>
-                <li>Comprueba que la instalaci&oacute;n est&eacute; lista con <code>kiro-cli doctor</code>.</li>
+                <li>En Windows, instala la versi&oacute;n para Windows 11. Abre PowerShell y comprueba el CLI con <code>kiro-cli --version</code>.</li>
+                <li>Inicia sesi&oacute;n con <code>kiro-cli login</code> y completa la autenticaci&oacute;n en el navegador.</li>
+                <li>Confirma que todo est&eacute; listo con <code>kiro-cli doctor</code>.</li>
               </ol>
             </article>
             <article class="kiro-stage-card">
-              <header><span class="kiro-stage-number">02</span><div><span class="timeline-label">Conexi&oacute;n</span><h4>Agrega Kiro como agente ACP</h4></div></header>
-              <ol class="steps">
-                <li>Cuando AI Assistant est&eacute; instalado, abre o vuelve a abrir AI Chat. Si el panel sigue mostrando <strong>Install Plugin</strong>, completa primero la instalaci&oacute;n.</li>
-                <li>En la esquina superior derecha del panel AI Chat, abre el control para agregar un agente personalizado y elige <strong>Add Custom Agent</strong>. Si el men&uacute; solo muestra <em>Hide</em> y <em>Move to</em>, es el men&uacute; general de la ventana; ci&eacute;rralo.</li>
-                <li>PyCharm abrir&aacute; <code>~/.jetbrains/acp.json</code>. Agrega la configuraci&oacute;n de ejemplo y reemplaza la ruta del comando por la ruta absoluta de Kiro CLI.</li>
-                <li>Guarda el archivo. En AI Chat, selecciona <strong>Kiro Agent</strong>.</li>
-              </ol>
+              <header><span class="kiro-stage-number">02</span><div><span class="timeline-label">Plugin de PyCharm</span><h4>Instala Kiro with GUI</h4></div></header>
+              <p>En PyCharm, abre <strong>File → Settings → Plugins → Marketplace</strong>, busca <strong>Kiro with GUI</strong> e instala el plugin. Si aparece el aviso de plugins de terceros, selecciona <strong>Accept</strong>. Reinicia PyCharm si lo solicita.</p>
             </article>
           </div>
 
-          <div class="command-block kiro-config-block">
-            <div class="command-head">
-              <div><span class="kiro-code-label">Configuraci&oacute;n ACP</span><h4>Ejemplo para <code>acp.json</code></h4></div>
-              <button class="copy-button" data-copy>Copiar</button>
-            </div>
-            <pre><code>{
-  "agent_servers": {
-    "Kiro Agent": {
-      "command": "C:\\ruta\\completa\\a\\kiro-cli.exe",
-      "args": ["acp"]
-    }
-  }
-}</code></pre>
+          <div class="kiro-install-gallery" aria-label="Pasos visuales para instalar el plugin Kiro with GUI">
+            <figure class="image-card kiro-install-card">
+              <div class="kiro-install-card-heading"><span>01</span><strong>Abre Plugins</strong></div>
+              <img src="./images/kiro-plugin-step-01.svg" alt="En PyCharm, el menú File está abierto y la opción Plugins está resaltada." />
+              <figcaption>En PyCharm, abre <strong>File → Settings → Plugins</strong>.</figcaption>
+            </figure>
+            <figure class="image-card kiro-install-card">
+              <div class="kiro-install-card-heading"><span>02</span><strong>Busca e instala</strong></div>
+              <img src="./images/kiro-plugin-step-02.svg" alt="Marketplace de plugins con Kiro with GUI en la búsqueda y el botón Install disponible." />
+              <figcaption>En <strong>Marketplace</strong>, busca <strong>Kiro with GUI</strong> y pulsa <strong>Install</strong>.</figcaption>
+            </figure>
+            <figure class="image-card kiro-install-card">
+              <div class="kiro-install-card-heading"><span>03</span><strong>Acepta el aviso</strong></div>
+              <img src="./images/kiro-plugin-step-03.svg" alt="Aviso de plugin de terceros para Kiro with GUI con el botón Accept resaltado." />
+              <figcaption>Si aparece el aviso de terceros, confirma con <strong>Accept</strong>.</figcaption>
+            </figure>
+            <figure class="image-card kiro-install-card">
+              <div class="kiro-install-card-heading"><span>04</span><strong>Abre Kiro</strong></div>
+              <img src="./images/kiro-plugin-step-04.svg" alt="PyCharm con el icono morado de Kiro visible en la barra lateral derecha." />
+              <figcaption>Reinicia PyCharm si lo pide y abre Kiro desde su icono en la barra lateral.</figcaption>
+            </figure>
           </div>
 
-          <div class="note-box kiro-path-note">
-            <strong>Encuentra la ruta del ejecutable:</strong> en Windows, ejecuta
-            <code>Get-Command kiro-cli | Select-Object -ExpandProperty Source</code> en PowerShell.
-            En macOS o Linux, ejecuta <code>which kiro-cli</code>. Copia la ruta devuelta en
-            <code>command</code>; en JSON las barras invertidas de Windows se escriben dobles.
-            Si la opci&oacute;n no aparece, consulta la
-            <a href="https://www.jetbrains.com/help/ai-assistant/activate-agents.html" target="_blank" rel="noreferrer">gu&iacute;a de JetBrains para agregar agentes ACP</a>.
+          <div class="timeline kiro-timeline kiro-config-timeline">
+            <article class="kiro-stage-card">
+              <header><span class="kiro-stage-number">03</span><div><span class="timeline-label">Configuraci&oacute;n</span><h4>Verifica el CLI desde el panel de Kiro</h4></div></header>
+              <ol class="steps">
+                <li>Abre Kiro desde el icono morado que aparece en la barra lateral de PyCharm.</li>
+                <li>En el panel de Kiro, abre <strong>Manage → Settings</strong> (o <strong>Settings → Tools → Kiro</strong>) y verifica el campo del comando de Kiro.</li>
+                <li>Si <code>kiro-cli</code> no se detecta, reempl&aacute;zalo por la ruta completa. En Windows puedes encontrarla en PowerShell con <code>Get-Command kiro-cli | Select-Object -ExpandProperty Source</code>.</li>
+                <li>Comprueba en <strong>Manage → Auth</strong> que la sesi&oacute;n est&eacute; iniciada. Si no, ejecuta <code>kiro-cli login</code> en PowerShell y vuelve al panel.</li>
+              </ol>
+            </article>
           </div>
 
           <div class="kiro-practice-heading"><span class="kiro-intro-label">Pr&aacute;ctica guiada</span><h4>Pide, revisa, ejecuta y valida</h4><p>Abre <code>modulo-01/ejercicios/04_funciones.py</code> y env&iacute;a este requerimiento a Kiro:</p></div>
@@ -869,18 +874,19 @@ pip list</code></pre>
               <h4>Requerimiento para Kiro</h4>
               <button class="copy-button" data-copy>Copiar</button>
             </div>
-            <pre><code>En modulo-01/ejercicios/04_funciones.py agrega una funci?n calcular_progreso(completados, total) que retorne el porcentaje completado como n?mero entre 0 y 100. Si total es 0, debe retornar 0. Agrega ejemplos de uso al final del archivo. No edites otros archivos. Antes de modificar el c?digo, expl?came el plan y espera mi aprobaci?n. Despu?s de implementar, dime c?mo puedo comprobar los resultados.</code></pre>
+            <pre><code>En modulo-01/ejercicios/04_funciones.py, agrega una función llamada calcular_progreso(completados, total) que retorne el porcentaje completado como un número entre 0 y 100. Si total es 0, debe retornar 0. Agrega ejemplos de uso al final del archivo. No edites otros archivos. Antes de cambiar el código, explícame el plan y espera mi aprobación. Después de implementar, dime cómo comprobar los resultados.</code></pre>
           </div>
           <ol class="kiro-validation-steps">
             <li><span>01</span><div><strong>Lee el plan</strong><p>Verifica que Kiro entendi&oacute; el archivo, la f&oacute;rmula y el caso <code>total = 0</code>.</p></div></li>
             <li><span>02</span><div><strong>Inspecciona el diff</strong><p>Ubica la funci&oacute;n, sus argumentos, el valor que retorna y el caso especial.</p></div></li>
             <li><span>03</span><div><strong>Ejecuta y comprueba</strong><p>Verifica que 2 de 4 produzca 50 y que el caso con total 0 produzca 0.</p></div></li>
-            <li><span>04</span><div><strong>Guarda cuando lo entiendas</strong><p>Si algo falla, comparte el error con Kiro; al final revisa <code>git diff</code> y crea un commit.</p></div></li>
+            <li><span>04</span><div><strong>Guarda cuando lo entiendas</strong><p>Si algo falla, comparte el error con Kiro. Cuando la mejora funcione, revisa <code>git diff</code>, crea un commit y súbelo a GitHub desde la rama <code>DEV</code>.</p></div></li>
           </ol>
 
           <div class="kiro-responsibility"><span aria-hidden="true">&#10003;</span><p><strong>El agente propone; t&uacute; decides.</strong> Antes de guardar el cambio, aseg&uacute;rate de poder explicar qu&eacute; se modific&oacute; y c&oacute;mo comprobaste que funciona.</p></div>
           <p class="hint kiro-doc-links">
-            Documentaci&oacute;n: <a href="https://kiro.dev/docs/cli/acp/" target="_blank" rel="noreferrer">Kiro CLI con ACP</a>,
+            Documentaci&oacute;n: <a href="https://kiro.dev/docs/getting-started/installation/" target="_blank" rel="noreferrer">instalar Kiro CLI</a>,
+            <a href="https://plugins.jetbrains.com/plugin/30960-kiro-with-gui" target="_blank" rel="noreferrer">plugin Kiro with GUI</a>,
             <a href="https://kiro.dev/docs/models/available-models/" target="_blank" rel="noreferrer">modelos disponibles</a> y
             <a href="https://kiro.dev/pricing/" target="_blank" rel="noreferrer">planes y cr&eacute;ditos</a>.
           </p>
@@ -888,46 +894,59 @@ pip list</code></pre>
 
         <section id="errores" class="panel">
           <p class="section-kicker">Soporte</p>
-          <h3>Errores comunes y cómo reaccionar</h3>
-          <div class="timeline">
+          <h3>Si algo se detiene, retoma desde el paso correspondiente</h3>
+          <p class="support-intro">Busca el síntoma y vuelve a la sección indicada. Así podrás resolverlo sin repetir toda la configuración.</p>
+          <div class="timeline support-grid">
             <article>
-              <span class="timeline-label">Caso 1</span>
-              <h4>`conda` no se reconoce</h4>
-              <p>Abrir Anaconda Prompt o reiniciar la terminal después de instalar Miniconda.</p>
+              <span class="timeline-label">Miniconda · Paso 3</span>
+              <h4><code>conda</code> no se reconoce</h4>
+              <p>En Windows, abre <strong>Anaconda Prompt</strong> desde Inicio; el instalador recomienda dejar desmarcada la opción para agregar Conda al <code>PATH</code>. En macOS o Linux, abre una terminal nueva después de instalar.</p>
             </article>
             <article>
-              <span class="timeline-label">Caso 2</span>
-              <h4>PyCharm no encuentra el repositorio</h4>
-              <p>Verificar que la conexión con GitHub se hizo sobre la cuenta correcta del estudiante.</p>
+              <span class="timeline-label">PyCharm · Paso 4</span>
+              <h4>No aparece tu fork al clonar</h4>
+              <p>En <strong>Settings → Version Control → GitHub</strong>, confirma que PyCharm inició sesión con la cuenta que contiene tu fork de <code>RAGLAB</code>. Luego vuelve a <strong>Clone Repository</strong> y selecciona ese repositorio.</p>
             </article>
             <article>
-              <span class="timeline-label">Caso 3</span>
+              <span class="timeline-label">Entorno · Paso 4</span>
               <h4>PyCharm no encuentra Python</h4>
-              <p>Seleccionar manualmente el intérprete del entorno `RAGLAB`.</p>
+              <p>En la configuración del intérprete, agrega un intérprete Conda existente y selecciona el entorno <code>RAGLAB</code>. Si aún no existe, créalo desde la carpeta raíz con <code>conda env create -f RAGLAB.yml</code> y luego actívalo con <code>conda activate RAGLAB</code>.</p>
             </article>
             <article>
-              <span class="timeline-label">Caso 4</span>
-              <h4>El entorno tarda demasiado</h4>
-              <p>Es normal. El archivo del curso instala librerías pesadas como `torch` y `transformers`.</p>
+              <span class="timeline-label">Kiro · Paso 7</span>
+              <h4>Kiro no aparece en PyCharm</h4>
+              <p>Confirma que <strong>Kiro with GUI</strong> figure como instalado en <strong>Settings → Plugins → Installed</strong>. Reinicia PyCharm y comprueba que el comando del CLI esté configurado en <strong>Manage → Settings</strong>.</p>
+            </article>
+            <article>
+              <span class="timeline-label">Git · Paso 6</span>
+              <h4>El commit o Push falla</h4>
+              <p>Revisa <code>git status</code> y confirma que estás en la rama <code>DEV</code>. Si Git solicita identidad, configura el nombre y el correo asociados a tu cuenta de GitHub; después vuelve a intentar el commit y <code>git push origin DEV</code>.</p>
+            </article>
+            <article>
+              <span class="timeline-label">Instalación · Pasos 3 y 4</span>
+              <h4>La creación del entorno demora</h4>
+              <p>La primera instalación descarga dependencias como <code>torch</code> y <code>transformers</code>. Mantén abierta la terminal y espera a que termine; si aparece un error, comparte el primer mensaje de fallo antes de volver a ejecutar el comando.</p>
+            </article>
+            <article class="support-howto">
+              <span class="timeline-label">Para pedir ayuda</span>
+              <h4>Comparte el contexto del error</h4>
+              <p>Indica el paso que seguías, qué esperabas que ocurriera y qué ocurrió. Copia el mensaje completo de la terminal o adjunta una captura donde se vea la ventana relevante.</p>
             </article>
           </div>
         </section>
 
         <section id="checklist" class="panel">
           <p class="section-kicker">Cierre</p>
-          <h3>Checklist final del módulo</h3>
-          <ul class="check-list">
-            <li>Cuenta de GitHub creada y configurada.</li>
-            <li>Git instalado y funcionando.</li>
-            <li>Miniconda instalado y funcionando.</li>
-            <li>Fork del repositorio creado en GitHub.</li>
-            <li>Proyecto descargado en local desde PyCharm.</li>
-            <li>Entorno `RAGLAB` creado correctamente.</li>
-            <li>PyCharm apuntando al intérprete correcto.</li>
-            <li>Scripts de Python ejecutados sin errores.</li>
-            <li>Un requerimiento implementado con Kiro, revisado en el diff y validado al ejecutar el script.</li>
-            <li>Al menos 2 commits hechos por el estudiante.</li>
-          </ul>
+          <h3>Checklist: del espacio de trabajo al cambio compartido</h3>
+          <p class="support-intro">El módulo queda completo cuando puedes recorrer y explicar este flujo:</p>
+          <ol class="closing-checklist">
+            <li><span>01</span><div><strong>Proyecto listo</strong><p>Git configurado; fork de <code>RAGLAB</code> creado en tu cuenta y abierto en PyCharm desde la rama <code>DEV</code>.</p></div></li>
+            <li><span>02</span><div><strong>Entorno preparado</strong><p>Miniconda instalado, entorno <code>RAGLAB</code> creado desde <code>RAGLAB.yml</code> y seleccionado como intérprete de PyCharm.</p></div></li>
+            <li><span>03</span><div><strong>Python comprobado</strong><p>Ejecutaste los cuatro ejercicios: hola Python, variables y tipos, condicionales y bucles, y funciones.</p></div></li>
+            <li><span>04</span><div><strong>Cambio comprendido y validado</strong><p>Con Kiro, planteaste una mejora concreta, revisaste el plan y el diff, ejecutaste el script y comprobaste los resultados esperados.</p></div></li>
+            <li><span>05</span><div><strong>Trabajo guardado y compartido</strong><p>Creaste un commit que puedes explicar y lo subiste a tu fork en GitHub con Push desde <code>DEV</code>.</p></div></li>
+          </ol>
+          <div class="closing-note"><strong>Recuerda:</strong> el agente propone el cambio; tú verificas que cumple el requerimiento antes de guardarlo y compartirlo.</div>
         </section>
       </main>
     </div>

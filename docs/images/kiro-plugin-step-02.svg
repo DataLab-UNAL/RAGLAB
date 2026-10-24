@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="430" viewBox="0 0 760 430" role="img" aria-labelledby="title desc">
+  <title id="title">Buscar Kiro with GUI en Plugins</title>
+  <desc id="desc">La ventana de Plugins muestra Marketplace, la búsqueda Kiro with GUI y el botón Install.</desc>
+  <rect width="760" height="430" rx="18" fill="#f4f5f7"/>
+  <rect x="16" y="16" width="728" height="398" rx="15" fill="#fff" stroke="#d4d7de" stroke-width="2"/>
+  <text x="39" y="54" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#292d35">Settings — Plugins</text>
+  <rect x="39" y="72" width="180" height="43" rx="8" fill="#f4f6fa" stroke="#cbd0d9"/>
+  <text x="55" y="99" font-family="Arial, sans-serif" font-size="15" fill="#656b76">Marketplace</text>
+  <rect x="252" y="72" width="414" height="43" rx="8" fill="#fff" stroke="#b9c3d4" stroke-width="2"/>
+  <circle cx="274" cy="92" r="7" fill="none" stroke="#77808e" stroke-width="2"/><path d="M279 97l6 6" stroke="#77808e" stroke-width="2"/>
+  <text x="296" y="98" font-family="Arial, sans-serif" font-size="15" fill="#242832">Kiro with GUI</text>
+  <rect x="39" y="132" width="382" height="117" rx="12" fill="#eef2ff" stroke="#b4c7ff" stroke-width="2"/>
+  <rect x="56" y="153" width="48" height="48" rx="13" fill="#8b45ed"/>
+  <path d="M80 163c-8 0-13 6-13 15v11h7v-11c0-5 2-8 6-8s6 3 6 8v11h7v-11c0-9-5-15-13-15z" fill="#fff"/>
+  <text x="117" y="170" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#252934">Kiro with GUI</text>
+  <text x="117" y="196" font-family="Arial, sans-serif" font-size="13" fill="#6d7480">elsboo · Plugin</text>
+  <text x="117" y="222" font-family="Arial, sans-serif" font-size="13" fill="#818895">Integra Kiro CLI en PyCharm</text>
+  <rect x="301" y="162" width="99" height="39" rx="8" fill="#fff" stroke="#3b9f69" stroke-width="2"/>
+  <text x="322" y="187" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#238352">Install</text>
+  <rect x="443" y="139" width="272" height="203" rx="14" fill="#252a35"/>
+  <text x="466" y="178" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#aab5c7">PASO 2</text>
+  <text x="466" y="214" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#fff">Marketplace</text>
+  <text x="466" y="245" font-family="Arial, sans-serif" font-size="14" fill="#d1d6df">Busca “Kiro with GUI”</text>
+  <text x="466" y="270" font-family="Arial, sans-serif" font-size="14" fill="#d1d6df">y pulsa Install.</text>
+</svg>
