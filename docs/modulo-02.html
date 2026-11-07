@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RAG-LAB | Módulo 2: Prompting Engineering</title>
+    <meta name="description" content="Presentación de Prompting Engineering del módulo 2 de RAG-LAB, disponible para consultar en el navegador." />
+    <link rel="icon" href="data:," />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      .presentation-main { width: min(1200px, calc(100% - 48px)); margin: 0 auto; padding: clamp(28px, 5vw, 64px) 0 52px; }
+      .presentation-heading { margin-bottom: 24px; }
+      .presentation-heading .eyebrow { margin: 0 0 8px; color: var(--accent-deep); font-size: .82rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+      .presentation-heading h1 { margin: 0 0 10px; font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.08; }
+      .presentation-heading p { margin: 0; color: var(--muted); }
+      .pdf-frame { display: block; width: 100%; height: max(68svh, 560px); border: 1px solid rgba(29, 35, 48, .18); border-radius: 14px; background: #fff; box-shadow: var(--shadow); }
+      .pdf-fallback { margin: 14px 0 0; color: var(--muted); font-size: .95rem; }
+      .pdf-fallback a { font-weight: 600; }
+      @media (max-width: 560px) { .presentation-main { width: min(100% - 24px, 1200px); padding-top: 30px; } .pdf-frame { height: 72svh; min-height: 480px; border-radius: 8px; } }
+    </style>
+  </head>
+  <body>
+    <header class="course-header">
+      <div class="course-header-inner">
+        <a class="course-brand" href="./index.html" aria-label="RAG-LAB, ir a bienvenida">
+          <img src="./images/brand/datalab-header.png" alt="Laboratorio de Analítica de Datos, Sede Bogotá" />
+        </a>
+        <nav class="course-top-nav" aria-label="Navegación principal">
+          <a href="./index.html">Bienvenida</a>
+          <a href="./modulo-01.html">Módulo 1</a>
+          <a href="./modulo-etica.html">Ética</a>
+          <a href="./modulo-02.html" aria-current="page">Módulo 2</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="presentation-main">
+      <div class="presentation-heading">
+        <p class="eyebrow">Módulo 2</p>
+        <h1>Prompting Engineering</h1>
+        <p>Consulta la presentación directamente aquí. Puedes navegar sus páginas con los controles del visor.</p>
+      </div>
+      <iframe class="pdf-frame" src="./presentaciones/Prompting_Engineering.pdf" title="Presentación Prompting Engineering, módulo 2" type="application/pdf">
+        Tu navegador no puede mostrar el PDF integrado. <a href="./presentaciones/Prompting_Engineering.pdf" target="_blank" rel="noopener noreferrer">Abrir la presentación</a>.
+      </iframe>
+      <p class="pdf-fallback">¿No aparece el visor? <a href="./presentaciones/Prompting_Engineering.pdf" target="_blank" rel="noopener noreferrer">Abrir la presentación en una pestaña nueva</a>.</p>
+    </main>
+
+    <footer class="course-footer">
+      <div class="course-footer-inner">
+        <p>RAG-LAB <span>·</span> Módulo 2 <span>·</span> Prompting Engineering</p>
+        <img src="./images/brand/datalab-footer.jpg" alt="DataLab UNAL" />
+      </div>
+    </footer>
+  </body>
+</html>

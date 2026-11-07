@@ -1,6 +1,6 @@
 # RAG-LAB | Diseño de agentes de IA
 
-Repositorio de materiales para aprender a crear asistentes inteligentes y sistemas RAG. Incluye la bienvenida al curso, una ruta práctica de programación y agentes de IA, una actividad de análisis de datos y una sesión complementaria sobre ética, equidad y seguridad.
+Repositorio de materiales para aprender a crear asistentes inteligentes y sistemas RAG. Incluye la bienvenida al curso, una ruta práctica de programación y agentes de IA, una sesión complementaria sobre ética, equidad y seguridad, y una presentación sobre Prompting Engineering para el módulo 2.
 
 ## Materiales del curso
 
@@ -8,6 +8,7 @@ Repositorio de materiales para aprender a crear asistentes inteligentes y sistem
 - [Módulo 1: herramientas, Python y agentes de IA](docs/modulo-01.html): guía interactiva de ocho horas en dos sesiones. La segunda sesión termina con un proyecto de dos horas para analizar datos públicos, crear un tablero HTML y publicarlo en GitHub Pages.
 - [Material de apoyo del módulo 1](modulo-01/README.md) y [ejercicios de Python](modulo-01/ejercicios/).
 - [Sesión complementaria: IA responsable en RAG y agentes](docs/modulo-etica.html), con su [guía de actividades y laboratorios](modulo-etica/README.md).
+- [Módulo 2: Prompting Engineering](docs/modulo-02.html): presentación disponible para lectura en el navegador.
 - [Entorno Conda del curso](RAGLAB.yml).
 
 ## Ruta de aprendizaje
