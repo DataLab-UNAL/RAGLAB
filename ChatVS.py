@@ -20,7 +20,7 @@ class AppConfig:
 
     api_key: str
     api_base: str = "https://openrouter.ai/api/v1"
-    model: str = "cohere/north-mini-code:free"
+    model: str = "nvidia/nemotron-3-ultra-550b-a55b:free"
     max_iterations: int = 4
     temperature: float = 0.7
     max_tokens: int = 450

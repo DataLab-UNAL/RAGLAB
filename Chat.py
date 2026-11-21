@@ -22,7 +22,7 @@ if not api_key:
 llm = ChatOpenAI(
     openai_api_base="https://openrouter.ai/api/v1",
     openai_api_key=os.environ["OPENAI_API_KEY"],
-    model_name="cohere/north-mini-code:free",
+    model_name="nvidia/nemotron-3-ultra-550b-a55b:free",
     temperature=0.5,
 )
 

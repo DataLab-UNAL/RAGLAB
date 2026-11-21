@@ -16,7 +16,7 @@ ENV_FILE = PROJECT_ROOT / "secrets" / ".env"
 # Mismos proveedor, modelo, temperatura y variable que usa Chat.py.
 API_KEY_VARIABLE = "OPENAI_API_KEY"
 API_BASE_URL = "https://openrouter.ai/api/v1"
-MODEL_NAME = "cohere/north-mini-code:free"
+MODEL_NAME = "nvidia/nemotron-3-ultra-550b-a55b:free"
 TEMPERATURE = 0.5
 
 # Tiempo máximo (segundos) de cada llamada al proveedor.
